@@ -1,16 +1,16 @@
 # Graph Report - liftosaur-ranks  (2026-07-06)
 
 ## Corpus Check
-- 1859 files · ~3,524,644 words
+- 1853 files · ~3,521,675 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 17345 nodes · 55359 edges · 819 communities (750 shown, 69 thin omitted)
-- Extraction: 94% EXTRACTED · 6% INFERRED · 0% AMBIGUOUS · INFERRED: 3130 edges (avg confidence: 0.78)
+- 17277 nodes · 55244 edges · 812 communities (740 shown, 72 thin omitted)
+- Extraction: 94% EXTRACTED · 6% INFERRED · 0% AMBIGUOUS · INFERRED: 3129 edges (avg confidence: 0.78)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d2311da4`
+- Built from commit: `5d19b881`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -673,8 +673,6 @@
 - [[_COMMUNITY_README|README.md]]
 - [[_COMMUNITY_register-rn-web.js|register-rn-web.js]]
 - [[_COMMUNITY_create-selfhost-tables.ts|create-selfhost-tables.ts]]
-- [[_COMMUNITY_extractMuscleSprites.js|extractMuscleSprites.js]]
-- [[_COMMUNITY_muscleGroupImage.native.tsx|muscleGroupImage.native.tsx]]
 - [[_COMMUNITY_muscleImage.native.tsx|muscleImage.native.tsx]]
 - [[_COMMUNITY_weekCalendarPager.tsx|weekCalendarPager.tsx]]
 - [[_COMMUNITY_Spec|Spec]]
@@ -722,12 +720,9 @@
 - [[_COMMUNITY_Tap|Tap]]
 - [[_COMMUNITY_consentMode.ts|consentMode.ts]]
 - [[_COMMUNITY_build-markdown.js|build-markdown.js]]
-- [[_COMMUNITY_input2.tsx|input2.tsx]]
-- [[_COMMUNITY_textarea2.tsx|textarea2.tsx]]
 - [[_COMMUNITY_NativeLiftosaurImageResizer.ts|NativeLiftosaurImageResizer.ts]]
 - [[_COMMUNITY_NativeLiftosaurTimer.ts|NativeLiftosaurTimer.ts]]
 - [[_COMMUNITY_keychainStore.native.ts|keychainStore.native.ts]]
-- [[_COMMUNITY_perfSampling.ts|perfSampling.ts]]
 - [[_COMMUNITY_tailwindConfig.native.ts|tailwindConfig.native.ts]]
 - [[_COMMUNITY_webpack.lambda.config.js|webpack.lambda.config.js]]
 - [[_COMMUNITY_entrypoint.sh|entrypoint.sh]]
@@ -751,7 +746,6 @@
 - [[_COMMUNITY_claude-stream.sh|claude-stream.sh]]
 - [[_COMMUNITY_devserver-runner.sh|devserver-runner.sh]]
 - [[_COMMUNITY_webpack-server-runner.sh|webpack-server-runner.sh]]
-- [[_COMMUNITY_app.json|app.json]]
 - [[_COMMUNITY_Week 1|Week 1]]
 - [[_COMMUNITY_Day 1|Day 1]]
 - [[_COMMUNITY_Day 1|Day 1]]
@@ -851,7 +845,7 @@
 ## Hyperedges (group relationships)
 - **Liftosaur Legal & Policy Document Set** — terms, privacy, healthconnectprivacypolicy, licenses [INFERRED 0.80]
 
-## Communities (819 total, 69 thin omitted)
+## Communities (812 total, 72 thin omitted)
 
 ### Community 0 - "Account & Equipment Settings UI"
 Cohesion: 0.11
@@ -866,8 +860,8 @@ Cohesion: 0.09
 Nodes (20): Before / After, Benchmarks, How It Work, <img src="../../docs/assets/dancing-rock.svg" width="20" height="20" alt="rock"/> Caveman (285 tokens), Install, 📄 Original (706 tokens), Part of Caveman, Security (+12 more)
 
 ### Community 3 - "Equipment Setup & Program Preview"
-Cohesion: 0.02
-Nodes (496): BigDecimalEnv, min_int64(), bf_set_exp_bits(), JS_FreeValue(), JS_GetProperty(), JS_IsException(), JS_IsObject(), JS_NewInt64() (+488 more)
+Cohesion: 0.03
+Nodes (424): BigDecimalEnv, min_int64(), JS_DupValue(), JS_FreeValue(), JS_GetProperty(), JS_IsException(), JS_IsNull(), JS_IsObject() (+416 more)
 
 ### Community 7 - "SKILL.md"
 Cohesion: 0.14
@@ -898,144 +892,144 @@ Cohesion: 0.29
 Nodes (5): caveman-stats, Example output, How to invoke, See also, What it does
 
 ### Community 14 - "benchmark.py"
-Cohesion: 0.02
-Nodes (348): ActiveGraphContext, IActiveGraphContext, useActiveGraph(), IBottomSheetEditTargetContentProps, IBottomSheetEditTargetProps, IBottomSheetMonthCalendarContentProps, IBottomSheetNextWorkoutContentProps, IBottomSheetWorkoutSupersetContentProps (+340 more)
+Cohesion: 0.01
+Nodes (346): Bool, ActiveGraphContext, IActiveGraphContext, IBottomSheetEditTargetContentProps, IBottomSheetEditTargetProps, IBottomSheetMonthCalendarContentProps, Button(), containsString() (+338 more)
 
 ### Community 16 - "progress.ts"
 Cohesion: 0.02
-Nodes (313): recordImage(), userImage(), IProfileImageGeneratorArgs, ProfileImageGenerator, IRecordImageGeneratorArgs, RecordImageGenerator, IRecordResponse, BottomSheetEditTarget() (+305 more)
+Nodes (329): recordImage(), userImage(), parseMeasurementValue(), IProfileImageGeneratorArgs, ProfileImageGenerator, IRecordImageGeneratorArgs, RecordImageGenerator, LogsContent() (+321 more)
 
 ### Community 17 - "exercise.ts"
-Cohesion: 0.02
-Nodes (338): outputDir, BottomSheetCustomExerciseContent(), IBottomSheetCustomExerciseContentProps, IProps, BottomSheetMuscleGroupMusclePicker(), IExercisePickerCustomExerciseContentProps, BottomSheetMusclesOverrideContent(), getDefaultMusclesAndMultipliers() (+330 more)
+Cohesion: 0.01
+Nodes (335): renderExerciseHtml(), getExerciseHandler(), BottomSheet(), IProps, BottomSheetCustomExerciseContent(), IBottomSheetCustomExerciseContentProps, IProps, BottomSheetMuscleGroupMusclePicker() (+327 more)
 
 ### Community 18 - "ISettings"
 Cohesion: 0.02
-Nodes (310): ActionMenu(), IActionMenuAction, IActionMenuProps, ContentGrowingTextarea(), IContentGrowingTextareaProps, DraggableList2(), IDraggableItemProps, IDraggableList2Props (+302 more)
+Nodes (358): ActionMenu(), IActionMenuAction, IActionMenuProps, IProps, IBottomSheetNextWorkoutContentProps, IProps, IFooterProps, IProps (+350 more)
 
 ### Community 20 - "quickjs.c"
 Cohesion: 0.02
-Nodes (312): CASE, force_inline, max_uint32(), init_list_head(), __list_add(), list_add_tail(), list_del(), list_empty() (+304 more)
+Nodes (313): CASE, force_inline, max_uint32(), init_list_head(), __list_add(), list_add_tail(), list_del(), list_empty() (+305 more)
 
 ### Community 21 - "thunks.ts"
-Cohesion: 0.03
-Nodes (238): App(), AppInner(), globalAny, IRollbarFrame, IRollbarPayload, rewriteRollbarFrames(), rollbarClient, rollbarShim (+230 more)
+Cohesion: 0.05
+Nodes (129): AccountLoggedOutView(), editHistoryRecord(), ScreenAccount(), PurchaseCards(), webAlert(), WorkoutShareBottomSheetItem(), buildSubscribeThunk(), finishFreeAccess() (+121 more)
 
 ### Community 22 - "index.ts"
 Cohesion: 0.02
-Nodes (268): renderAllDocsHtml(), renderAllExercisesHtml(), apiErrorFromResult(), deleteV1ExerciseDataEndpoint, deleteV1ExerciseDataHandler(), deleteV1GymEndpoint, deleteV1GymHandler(), deleteV1HistoryEndpoint (+260 more)
+Nodes (257): renderAllDocsHtml(), renderAllExercisesHtml(), apiErrorFromResult(), deleteV1ExerciseDataEndpoint, deleteV1ExerciseDataHandler(), deleteV1GymEndpoint, deleteV1GymHandler(), deleteV1HistoryEndpoint (+249 more)
 
 ### Community 23 - "JS_DupValue"
-Cohesion: 0.02
-Nodes (263): get_u16(), JSAtom, JSValueConst, JS_DupValue(), JS_DupValueRT(), JS_IsBigDecimal(), JS_IsBigFloat(), JS_IsBigInt() (+255 more)
+Cohesion: 0.03
+Nodes (154): get_u16(), JSAtom, JSValueConst, JS_DupValueRT(), JS_IsBigDecimal(), JS_IsBigFloat(), JS_IsBigInt(), JS_IsBool() (+146 more)
 
 ### Community 24 - "AppNavigator.native.tsx"
-Cohesion: 0.03
-Nodes (186): AppContext, useAppContext(), BottomSheetEditProgramV2Content(), IBottomSheetEditProgramV2ContentProps, IProps, BottomSheetItem(), IProps, BottomSheetMonthCalendarContent() (+178 more)
+Cohesion: 0.04
+Nodes (87): areExerciseItemPropsEqual(), ModalCreateProgramContent(), EditProgram_createFromHistoryRecord(), EditProgram_setNextDay(), Program_getFirstProgramExercise(), Program_selectProgram(), Settings_defaultEquipment(), Weight_eqeq() (+79 more)
 
 ### Community 25 - "program.ts"
 Cohesion: 0.02
-Nodes (207): BottomSheetMusclesOverride(), BottomSheetNextWorkoutContent(), EditProgramV2Full(), HistoryRecordsList(), IconPreview(), IProps, IconSpinner(), IProps (+199 more)
+Nodes (250): { evaluatedWeeks }, match, setResults, setResultsString, settings, weekResults, BottomSheetMusclesOverride(), BottomSheetMusclesOverrideContent() (+242 more)
 
 ### Community 26 - "JSAtom"
 Cohesion: 0.04
-Nodes (226): BlockEnv, ClassFieldsDef, __exception, ExecModuleList, GetExportNamesState, unicode_from_utf8(), unicode_to_utf8(), lre_js_is_ident_next() (+218 more)
+Nodes (239): BlockEnv, ClassFieldsDef, CodeContext, __exception, GetExportNamesState, dbuf_free(), dbuf_put(), dbuf_putc() (+231 more)
 
 ### Community 27 - "reducer.ts"
-Cohesion: 0.02
-Nodes (137): IUserDao, userTableNames, IHandler, EQUIPMENT_WRITABLE_FIELDS, EXERCISE_DATA_WRITABLE_FIELDS, NodeEncoder_encode(), NodeEncoder_encodeIntoUrl(), getInitialState() (+129 more)
+Cohesion: 0.06
+Nodes (45): Thunk_undoImport(), ImportExporter_getExportedProgram(), isPlanProgram(), getLatestMigrationVersion(), migrations, runMigrations(), Exercise_deleteCustomExercise(), History_deleteRecords() (+37 more)
 
 ### Community 28 - "screenSubscription.tsx"
-Cohesion: 0.03
-Nodes (134): resolve(), rollbarClientAttribution(), DatePicker(), IDatePickerProps, DatePicker(), IDatePickerProps, uploadAndUpdateImage(), IImporterLiftosaurCsvProps (+126 more)
+Cohesion: 0.04
+Nodes (108): resolve(), DatePicker(), HelpGraphs(), IconDinoSunglasses(), IconTiktok(), ILineChartGesturesArgs, ILineChartGesturesResult, targetIsInsideGraphLegend() (+100 more)
 
 ### Community 29 - "Tailwind_semantic"
-Cohesion: 0.03
-Nodes (100): ContentGrowingTextarea(), IContentGrowingTextareaProps, RadioIndicator(), RadioIndicator(), IconAi(), IProps, IProps, IProps (+92 more)
+Cohesion: 0.01
+Nodes (328): useActiveGraph(), IBottomSheetEditProgramV2ContentProps, IProps, BuiltInProgram, IBuiltInProgramProps, ContentGrowingTextarea(), IContentGrowingTextareaProps, DropdownMenu() (+320 more)
 
 ### Community 30 - "JS_IsUndefined"
 Cohesion: 0.05
-Nodes (151): min_int(), JS_IsNull(), JS_SetProperty(), lre_get_flags(), lre_get_groupnames(), no_inline, UnicodeNormalizationEnum, check_regexp_g_flag() (+143 more)
+Nodes (103): min_int(), lre_get_flags(), lre_get_groupnames(), no_inline, copy_str16(), encodeURI_hex(), exported_names_cmp(), find_abbrev() (+95 more)
 
 ### Community 31 - "Object"
 Cohesion: 0.04
-Nodes (138): Object, asBool(), EQUIPMENT_ARG_PARSERS, err(), EXERCISE_DATA_ARG_PARSERS, IToolResult, McpToolExecutor_execute(), parseEquipmentArgs() (+130 more)
+Nodes (131): asBool(), EQUIPMENT_ARG_PARSERS, err(), EXERCISE_DATA_ARG_PARSERS, IToolResult, McpToolExecutor_execute(), parseEquipmentArgs(), parseExerciseDataArgs() (+123 more)
 
 ### Community 32 - "types.ts"
 Cohesion: 0.02
-Nodes (139): ExercisePreview, IModalGraphsProps, ModalGraphsContent(), MuscleGroupPreview, StatsPreview, EditGraphs_addExerciseGraph(), EditGraphs_addMuscleGroupGraph(), EditGraphs_addStatsLengthGraph() (+131 more)
+Nodes (133): ExercisePreview, IModalGraphsProps, ModalGraphsContent(), MuscleGroupPreview, StatsPreview, EditGraphs_addExerciseGraph(), EditGraphs_addMuscleGroupGraph(), EditGraphs_addStatsLengthGraph() (+125 more)
 
 ### Community 33 - "IDI"
-Cohesion: 0.03
-Nodes (77): IAiLogDao, tableNames, IAiMuscleCacheDao, tableNames, apiKeyTableNames, IApiKeyDao, AppleAuthTokenDao, tableNames (+69 more)
+Cohesion: 0.02
+Nodes (97): IAffiliateDao, tableNames, AiLogsDao, IAiLogDao, tableNames, IAiMuscleCacheDao, tableNames, apiKeyTableNames (+89 more)
 
 ### Community 34 - "Tailwind_colors"
-Cohesion: 0.03
-Nodes (105): BuiltInProgram, IBuiltInProgramProps, CustomProgram, ICustomProgramProps, ExerciseImage, INoImageProps, IProps, HistoryEntryView (+97 more)
+Cohesion: 0.05
+Nodes (73): HKWorkoutConfiguration, markdown-it, BottomSheetNextWorkoutContent(), HistoryRecordsList(), IProps, IDayEntry, ModalChangeNextDayContent(), IModalDayFromAdhocContentProps (+65 more)
 
 ### Community 35 - "NavScreenMe.native.tsx"
-Cohesion: 0.04
-Nodes (107): ChooseProgramView(), FallbackScreen(), INonNullableValues, IProps, IHelpKey, ScreenAppleHealthSettings(), ScreenEditProgram, buildLensDispatch() (+99 more)
+Cohesion: 0.05
+Nodes (91): ChooseProgramView(), ScreenExercises(), ScreenProgramPreview(), ScreenSettings, Thunk_pullScreen(), Equipment_getEquipmentOfGym(), Program_getProgram(), AppNavigator() (+83 more)
 
 ### Community 36 - "text.tsx"
-Cohesion: 0.04
-Nodes (80): IProps, Button(), containsString(), IProps, SetNumber(), BottomSheetEditProgramExerciseSupersetContent(), IBottomSheetEditProgramExerciseSupersetContentProps, IStateVariableType (+72 more)
+Cohesion: 0.03
+Nodes (83): IEquipmentResponse, IStateVariableType, cleanScript(), IModalEditProgressScriptProps, ModalEditProgressScriptContent(), cleanScript(), IModalEditUpdateScriptProps, ModalEditUpdateScriptContent() (+75 more)
 
 ### Community 37 - "workoutExerciseSet.tsx"
-Cohesion: 0.03
-Nodes (91): IconCheckCircle(), clamp(), CustomKeyboard, CustomKeyboardInner, ICustomKeyboardProps, IInputCommitMode, IKeyboardButtonProps, InputNumber2Inner() (+83 more)
+Cohesion: 0.04
+Nodes (88): SetNumber(), EditProgramUiExerciseContentView, EditProgramUiExerciseView, ExerciseNameLine(), IEditProgramUiExerciseContentViewProps, SupersetLine(), EditProgramUiExerciseSetVariations(), EditProgramUiProgress() (+80 more)
 
 ### Community 38 - ".log"
-Cohesion: 0.04
-Nodes (26): postVerifyAppleReceiptHandler(), postVerifyGooglePurchaseTokenHandler(), recordGoogleVerificationPayment(), deriveV1(), deriveV2(), fetchV1(), getArg(), GOOGLE_PRODUCT_IDS (+18 more)
+Cohesion: 0.03
+Nodes (30): PaymentDao, postVerifyAppleReceiptHandler(), postVerifyGooglePurchaseTokenHandler(), recordGoogleVerificationPayment(), deriveV1(), deriveV2(), fetchV1(), getArg() (+22 more)
 
 ### Community 39 - "utils.ts"
-Cohesion: 0.07
-Nodes (61): sortProgressByIndex(), Storage_applyStorageUpdate2(), Storage_mergeStorage(), ICollectionVersions, IFieldVersion, IIdVersion, isCollectionVersions(), isFieldVersion() (+53 more)
+Cohesion: 0.05
+Nodes (84): AbstractObject, findTargets(), getMemberDeclaration(), IMemberMapping, ITarget, main(), processTarget(), unwrapNamespace() (+76 more)
 
 ### Community 40 - "Service"
-Cohesion: 0.03
-Nodes (47): cachePromises, IAiConvertResponse, IGetStorageResponse, IPostStorageResponse, IPostSyncResponse, IRedeemCouponError, ISubscriptionServerDetails, Service (+39 more)
+Cohesion: 0.04
+Nodes (43): IHandler, NodeEncoder_encode(), NodeEncoder_encodeIntoUrl(), Service, Service_nativeClientHeaders(), IAppContext, IProps, AdminDebug_fetchDebugSnapshotStorage() (+35 more)
 
 ### Community 41 - "svg.tsx"
-Cohesion: 0.03
-Nodes (66): IGraphActiveCursor, IGraphLegendOverlayProps, IconCloseCircle(), IProps, IconDefaultExercise(), IProps, IconDinoSunglasses(), IProps (+58 more)
+Cohesion: 0.11
+Nodes (32): BottomSheetEditProgramV2Content(), HelpComponents, ModalImportFromLinkContent(), ModalNewEquipmentContent(), ModalNewFixedWeightContent(), ModalNewGymContent(), ModalPlatesContent(), ITourModalProps (+24 more)
 
 ### Community 42 - "Utils_getEnv"
 Cohesion: 0.04
-Nodes (19): AiLogsDao, AiMuscleCacheDao, ApiKeyDao, CouponDao, ExceptionDao, FreeUserDao, LogDao, UrlDao (+11 more)
+Nodes (32): AiMuscleCacheDao, CouponDao, DebugDao, EventDao, eventsTableNames, ExceptionDao, FreeUserDao, LogDao (+24 more)
 
 ### Community 43 - "collection.ts"
-Cohesion: 0.05
-Nodes (71): BottomSheet(), IProps, BottomSheetWorkoutSupersetContent(), EditProgramModeSwitchButton, EditProgramNavbar, EditProgramView, IEditProgramModeSwitchButtonProps, IEditProgramNavbarProps (+63 more)
+Cohesion: 0.14
+Nodes (19): useAppContext(), BottomSheetMonthCalendarContent(), buildCustomDispatch(), Exercise_handleCustomExerciseChange(), Program_getProgramExerciseByTypeWeekAndDay(), Progress_addExercise(), Progress_forceUpdateEntryIndex(), Settings_changePickerSettings() (+11 more)
 
 ### Community 44 - "View"
-Cohesion: 0.04
-Nodes (75): Hashable, ContentState, HistoryEntryState, LiveActivityRest, LiveActivitySet, LiveActivitySetTimer, SetCompletionState, failed (+67 more)
+Cohesion: 0.05
+Nodes (75): ButtonStyle, Hashable, ContentState, HistoryEntryState, LiveActivityRest, LiveActivitySet, LiveActivitySetTimer, SetCompletionState (+67 more)
 
 ### Community 45 - "dependencies"
 Cohesion: 0.02
-Nodes (92): dependencies, aws-cdk-lib, @aws-sdk/client-cloudwatch-logs, @aws-sdk/client-dynamodb, @aws-sdk/client-lambda, @aws-sdk/client-s3, @aws-sdk/client-secrets-manager, @aws-sdk/client-ses (+84 more)
+Nodes (93): dependencies, aws-cdk-lib, @aws-sdk/client-cloudwatch-logs, @aws-sdk/client-dynamodb, @aws-sdk/client-lambda, @aws-sdk/client-s3, @aws-sdk/client-secrets-manager, @aws-sdk/client-ses (+85 more)
 
 ### Community 47 - "MockIapAdapter"
-Cohesion: 0.04
-Nodes (20): IProps, IapAdapter, applePromoToWithOffer(), IapAdapter, IPriceCacheEntry, toIapInAppProduct(), toIapPurchase(), toIapSubscriptionProduct() (+12 more)
+Cohesion: 0.12
+Nodes (5): applePromoToWithOffer(), IapAdapter, toIapInAppProduct(), toIapPurchase(), toIapSubscriptionProduct()
 
 ### Community 48 - "subscriptions.ts"
-Cohesion: 0.04
-Nodes (42): PaymentDao, ISubscriptionDetailsDao, SubscriptionDetailsDao, ILimitedUserDao, AppleJWTVerifier, IAppleJWTHeader, ApplePaymentProcessor, IAppleReceiptInfo (+34 more)
+Cohesion: 0.09
+Nodes (35): FallbackScreen(), INonNullableValues, IProps, ScreenEditProgram, ScreenWorkout, EditProgram_initPlannerProgramExerciseState(), Program_fullProgram, Program_getFullProgram() (+27 more)
 
 ### Community 49 - "WorkoutManager"
-Cohesion: 0.06
-Nodes (26): AnyCancellable, CheckedContinuation, CompletedSetInfo, HealthIntent, discard, finish, startFromPhone, sync (+18 more)
+Cohesion: 0.05
+Nodes (32): AnyCancellable, CheckedContinuation, Bool, Double, String, SyncStatus, error, pending (+24 more)
 
 ### Community 50 - "Foundation"
-Cohesion: 0.04
-Nodes (46): ActivityKit, AppIntents, AudioToolbox, AVFoundation, Combine, Foundation, HealthKit, ImageIO (+38 more)
+Cohesion: 0.05
+Nodes (42): ActivityKit, App, AudioToolbox, AVFoundation, Combine, Foundation, HealthKit, ImageIO (+34 more)
 
 ### Community 51 - "get_u32"
-Cohesion: 0.07
-Nodes (79): BCWriterState, CodeContext, dbuf_free(), dbuf_put(), dbuf_putc(), bswap16(), bswap32(), bswap64() (+71 more)
+Cohesion: 0.10
+Nodes (43): BCWriterState, bswap16(), bswap32(), bswap64(), clz32(), ctz32(), ctz64(), dbuf_set_error() (+35 more)
 
 ### Community 52 - "devDependencies"
 Cohesion: 0.03
@@ -1046,28 +1040,28 @@ Cohesion: 0.05
 Nodes (67): getCommentsAfterDate(), getLastCommitDate(), getOpenProgramPRs(), IComment, IPRInfo, log(), LOG_DIR, main() (+59 more)
 
 ### Community 54 - "PlannerExerciseEvaluator"
-Cohesion: 0.07
-Nodes (20): checkForErrors(), collectWorkoutNotes(), commentsToString(), deserializeExerciseLine(), deserializeSetsAsCompleted(), deserializeSetsAsTarget(), deserializeWorkoutRecord(), getChildren() (+12 more)
+Cohesion: 0.16
+Nodes (5): IPlannerProgramExerciseSuperset, IProgramExerciseUpdate, assert(), getChildren(), PlannerExerciseEvaluator
 
 ### Community 55 - "ILogUtil"
-Cohesion: 0.04
-Nodes (17): CloudwatchNoopUtil, LambdaNoopUtil, SesNoopUtil, CloudwatchUtil, ICloudwatchUtil, IGoogleJWTHeader, IGoogleJWTPayload, ISheetData (+9 more)
+Cohesion: 0.03
+Nodes (19): CloudwatchUtil, ICloudwatchUtil, IGoogleJWTHeader, IGoogleJWTPayload, ISheetData, ILambdaUtil, LambdaUtil, ILogUtil (+11 more)
 
 ### Community 56 - "scripts"
 Cohesion: 0.03
 Nodes (72): scripts, analyze, android, android-device, android-device2, android-device2-release, android-device-release, android-release (+64 more)
 
 ### Community 57 - "ExerciseScreen"
-Cohesion: 0.08
-Nodes (37): Binding, ButtonStyle, Content, DateFormatter, FocusState, AddSetTabView, ExerciseCrownModifier, ExerciseHeaderView (+29 more)
+Cohesion: 0.07
+Nodes (37): Binding, Content, DateFormatter, FocusState, AddSetTabView, ExerciseCrownModifier, ExerciseHeaderView, ExercisePageView (+29 more)
 
 ### Community 58 - "JS_NewObjectProtoClass"
-Cohesion: 0.07
-Nodes (71): JSCFunction, JSCFunctionEnum, JS_NewCFunction(), JS_NewCFunctionMagic(), JSCFunctionListEntry, def_type, magic, name (+63 more)
+Cohesion: 0.03
+Nodes (166): ExecModuleList, JSCFunction, JSCFunctionEnum, JS_NewCFunction(), JS_NewCFunctionMagic(), JSCFunctionListEntry, def_type, magic (+158 more)
 
 ### Community 59 - "topNavMenu.tsx"
-Cohesion: 0.05
-Nodes (46): qrcode, main(), setStoreParams(), updateSource(), footerLinks, IProps, IconApple(), IconClose() (+38 more)
+Cohesion: 0.09
+Nodes (34): ITestimonialsDao, main(), setStoreParams(), updateSource(), IconLaptop(), IProps, IOnelinkProps, Onelink() (+26 more)
 
 ### Community 60 - "LiftosaurEngine"
 Cohesion: 0.12
@@ -1075,23 +1069,23 @@ Nodes (14): Error, EngineError, dataConversion, decodeFailed, evalFailed, jsErro
 
 ### Community 61 - "WatchCrashReporter"
 Cohesion: 0.05
-Nodes (29): App, DispatchSourceMemoryPressure, Int32, Double, FileHandle, Int, String, URL (+21 more)
+Nodes (26): DispatchSourceMemoryPressure, Int32, Double, FileHandle, Int, String, URL, uncaughtExceptionHandler() (+18 more)
 
 ### Community 62 - "paymentsDashboardContent.tsx"
-Cohesion: 0.07
-Nodes (43): AffiliateDao, IAffiliateDao, tableNames, IPaymentDao, tableNames, buildPaymentsPage(), IPaymentsPage, IPaymentsDashboardData (+35 more)
+Cohesion: 0.10
+Nodes (35): buildPaymentsPage(), IPaymentsPage, IPaymentsDashboardData, IPaymentsDashboardUserAffiliate, IPaymentsSummary, renderPaymentsDashboardHtml(), IProps, ScrollBarrell() (+27 more)
 
 ### Community 63 - "IAccount"
-Cohesion: 0.08
-Nodes (44): IAffiliateDashboardSummary, IAffiliateMonthlyPayment, IDebugStorages, IStorageDao, renderPlannerHtml(), renderProgramsListHtml(), ICreatorStats, IAiContentProps (+36 more)
+Cohesion: 0.06
+Nodes (57): renderAffiliatesHtml(), renderAiHtml(), renderAiPromptHtml(), IAffiliateDashboardSummary, IAffiliateMonthlyPayment, IDebugStorages, IStorageDao, renderLoginHtml() (+49 more)
 
 ### Community 64 - "handler.ts"
-Cohesion: 0.06
-Nodes (47): OauthDao, deleteMcpEndpoint, deleteMcpHandler(), getMcpEndpoint, getMcpHandler(), handleToolCall(), IJsonRpcRequest, IPayload (+39 more)
+Cohesion: 0.05
+Nodes (59): ApiKeyDao, OauthDao, deleteMcpEndpoint, deleteMcpHandler(), getMcpEndpoint, getMcpHandler(), handleToolCall(), IJsonRpcRequest (+51 more)
 
 ### Community 65 - "playwrightUtils.ts"
-Cohesion: 0.11
-Nodes (25): HOSTS, IStage, main(), replaceAndroidManifestURL(), replaceIosManifestURL(), replaceNativeHosts(), resolveStage(), syncFile() (+17 more)
+Cohesion: 0.15
+Nodes (17): ITestSet, PlaywrightUtils_activeScreen(), PlaywrightUtils_clearCodeMirror(), PlaywrightUtils_clickAll(), PlaywrightUtils_createProgram(), PlaywrightUtils_createProgramWithCode(), PlaywrightUtils_disableSubscriptions(), PlaywrightUtils_disableTours() (+9 more)
 
 ### Community 66 - "LiftosaurWorkoutMirroringImpl"
 Cohesion: 0.06
@@ -1118,12 +1112,12 @@ Cohesion: 0.16
 Nodes (57): bf_delete(), bf_is_nan(), bf_max(), bf_neg(), slimb_t, bf_acos(), bf_add_epsilon(), bf_add_si() (+49 more)
 
 ### Community 72 - "streamingHandler.ts"
-Cohesion: 0.06
-Nodes (29): getCurrentUserId(), getHeaders(), getStreamingHandler(), getUserAccount(), IHandler, IPayload, IStream, postAiConvertStreamEndpoint (+21 more)
+Cohesion: 0.07
+Nodes (20): ClaudeProvider, HttpStreaming_makeRequest(), HttpStreaming_readFullResponse(), HttpStreaming_streamRequest(), IStreamingRequest, LlmLiftoscript, LlmMuscles, LlmPrompt_getSystemPrompt() (+12 more)
 
 ### Community 73 - "WatchConnectivityManager"
-Cohesion: 0.06
-Nodes (27): SyncIndicatorView, AuthManager, KeychainHelper, Bool, Date, Double, String, Any (+19 more)
+Cohesion: 0.08
+Nodes (18): AuthManager, KeychainHelper, Bool, Date, Double, String, Any, Bool (+10 more)
 
 ### Community 74 - "Record Page & Legal Docs"
 Cohesion: 0.29
@@ -1135,11 +1129,11 @@ Nodes (29): Activity, ActivityAttributes, ActivityViewContext, LiftosaurLiveActi
 
 ### Community 76 - "run.ts"
 Cohesion: 0.05
-Nodes (43): getBody(), Global, handlePerfRequest(), handler, NodeJS, PERF_DATA_DIR, requestToProxyEvent(), server (+35 more)
+Nodes (46): getBody(), Global, handlePerfRequest(), handler, NodeJS, PERF_DATA_DIR, requestToProxyEvent(), server (+38 more)
 
 ### Community 77 - "BCReaderState"
-Cohesion: 0.10
-Nodes (54): BCReaderState, BC_add_object_ref(), BC_add_object_ref1(), bc_get_atom(), bc_get_buf(), bc_get_flags(), bc_get_leb128(), bc_get_leb128_int() (+46 more)
+Cohesion: 0.15
+Nodes (41): BCReaderState, BC_add_object_ref(), BC_add_object_ref1(), bc_get_atom(), bc_get_buf(), bc_get_flags(), bc_get_leb128(), bc_get_leb128_int() (+33 more)
 
 ### Community 78 - "libbf.c"
 Cohesion: 0.10
@@ -1158,48 +1152,48 @@ Cohesion: 0.09
 Nodes (38): Consent_getMode(), Consent_getStored(), Consent_hasGPC(), Consent_resolve(), Consent_store(), IConsentCategories, IConsentDecision, IConsentMode (+30 more)
 
 ### Community 82 - "LiftosaurWatch"
-Cohesion: 0.09
-Nodes (6): unrunMigrations(), Progress_stopTimerPure(), getEvaluatedProgram(), getProgram(), LiftosaurWatch, parseStorageSync()
+Cohesion: 0.06
+Nodes (19): ModalStatsContent(), unrunMigrations(), Program_getProgramExercise(), IStatsLength, IStatsPercentage, IStatsWeight, lg(), lgDebug() (+11 more)
 
 ### Community 83 - "Part 1: Lezer Grammar Syntax Reference"
 Cohesion: 0.04
 Nodes (45): Ambiguity Markers (GLR), Build Commands, Common Mistakes, Common Token Patterns, Compound Tokens, Context Tracking, Dependencies, Dialects (+37 more)
 
 ### Community 84 - "helpRegistry.ts"
-Cohesion: 0.07
-Nodes (25): HelpAccount(), HelpChooseProgram(), HelpChooseProgramFirstTime(), HelpEditProgramDaysList(), HelpEditProgramV2(), HelpExercises(), HelpExerciseStats(), HelpGraphs() (+17 more)
+Cohesion: 0.09
+Nodes (17): HelpAccount(), HelpChooseProgram(), HelpChooseProgramFirstTime(), HelpEditProgramDaysList(), HelpEditProgramV2(), HelpExercises(), HelpExerciseStats(), HelpMeasurements() (+9 more)
 
 ### Community 85 - "EventManager"
 Cohesion: 0.11
 Nodes (14): AnyObject, String, WatchEventManager, Event, EventManager, EventManagerDelegate, Logger, Bool (+6 more)
 
 ### Community 87 - "HydrateUtils_hydratePage"
-Cohesion: 0.12
-Nodes (24): main(), main(), main(), IAiPromptContentProps, main(), main(), main(), main() (+16 more)
+Cohesion: 0.10
+Nodes (28): main(), main(), IAiPromptContentProps, main(), main(), main(), IPageWrapperProps, PageWrapper() (+20 more)
 
 ### Community 88 - "zingtouch.d.ts"
-Cohesion: 0.05
-Nodes (16): IModalCreateStateVariableProps, ModalCreateStateVariableContent(), Distance, Expand, Gesture, GestureEvent, Pan, PanOptions (+8 more)
+Cohesion: 0.15
+Nodes (9): Distance, Expand, GestureEvent, PanOptions, Pinch, RegionGestures, SwipeOptions, TapOptions (+1 more)
 
 ### Community 89 - "plannerEvaluator.ts"
-Cohesion: 0.08
-Nodes (38): { evaluatedWeeks }, match, setResults, setResultsString, settings, weekResults, PlannerProgramExercise_buildDpRangeScript(), PlannerStatsUtils_setResultsToString() (+30 more)
+Cohesion: 0.13
+Nodes (36): bf_set_exp_bits(), bigfloat_get_rnd_mode(), bf_flags_t, limb_t, js_bigdecimal_get_rnd_mode(), js_bigdecimal_to_string(), js_bigdecimal_to_string1(), js_bigdecimal_toExponential() (+28 more)
 
 ### Community 90 - "screenFirst.tsx"
-Cohesion: 0.08
-Nodes (29): HistoryRecordsNullState(), IconEditor(), IProps, IconKettlebell(), IProps, IconWorkoutProgress(), IProps, SvgUri() (+21 more)
+Cohesion: 0.33
+Nodes (5): cache, fetchAsDataUri(), ImagePreloader_images, ImagePreloader_preload(), ImagePreloader_uri()
 
 ### Community 91 - "libregexp.c"
-Cohesion: 0.14
-Nodes (39): dbuf_error(), BOOL, put_u32(), DynBuf, __maybe_unused, compute_stack_size(), dbuf_insert(), find_group_name() (+31 more)
+Cohesion: 0.16
+Nodes (37): put_u32(), BOOL, DynBuf, __maybe_unused, compute_stack_size(), dbuf_insert(), find_group_name(), get_class_atom() (+29 more)
 
 ### Community 92 - "imageExtractorGymVisual.ts"
-Cohesion: 0.07
-Nodes (16): IS3Util, S3Util, findBoundingBox(), findBoundingBoxes(), getColorAt(), getNeighbors(), IBox, IColor (+8 more)
+Cohesion: 0.06
+Nodes (31): AffiliateDao, IPaymentDao, buildProgram(), getCdnHost(), IProgramPayload, ProgramDao, handler(), getProgramDetailsHandler() (+23 more)
 
 ### Community 93 - "date.ts"
-Cohesion: 0.09
-Nodes (30): ILogsContentProps, LogsContent(), ILogPayloads, Thunk_adminCheckKey(), Thunk_adminListDebugSnapshots(), Progress_changeDate(), IWhatsNew, WhatsNew_all() (+22 more)
+Cohesion: 0.36
+Nodes (7): WhatsNew_all(), WhatsNew_newUpdates(), isFrontmatterStart(), IWhatsNewEntry, parse(), WhatsNewParser_parseAll(), WhatsNew_updateStorage()
 
 ### Community 94 - "index.md"
 Cohesion: 0.05
@@ -1214,32 +1208,32 @@ Cohesion: 0.05
 Nodes (39): Advanced Descriptions (Multiple Per Exercise), Bodyweight and Assisted Exercises, Built-in Functions, Comments and Descriptions, Common Mistakes, Custom Progression, Days & Weeks, Double Progression (dp) (+31 more)
 
 ### Community 97 - "index.tsx"
-Cohesion: 0.10
-Nodes (24): IProps, getIdbKey(), adminKey, audio, client, initialize(), main(), url (+16 more)
+Cohesion: 0.04
+Nodes (84): IProps, Notification(), SubscriptionHero(), getIdbKey(), getInitialState(), IApplyProgramChangesToProgress, ICancelProgress, IChangeDate (+76 more)
 
 ### Community 98 - "page.tsx"
-Cohesion: 0.07
-Nodes (31): renderProgramDetailsHtml(), markdown-it, applyThemeBeforePaint(), IJsonLd, IJsonLdArticle, IJsonLdBreadcrumbItem, IJsonLdBreadcrumbs, IJsonLdFAQ (+23 more)
+Cohesion: 0.08
+Nodes (32): renderAffiliateDashboardHtml(), applyThemeBeforePaint(), IJsonLd, IJsonLdArticle, IJsonLdBreadcrumbItem, IJsonLdBreadcrumbs, IJsonLdFAQ, IJsonLdFAQEntry (+24 more)
 
 ### Community 99 - "LiftosaurEventReporterImpl"
 Cohesion: 0.09
 Nodes (23): LiftosaurEventReporterImpl, MetricKitSubscriberProxy, Double, Int64, NSDictionary, String, UserDefaults, Void (+15 more)
 
 ### Community 100 - "mainContent.tsx"
-Cohesion: 0.09
-Nodes (24): ITestimonialsDao, TestimonialDao, FooterPage(), IconHeart(), IProps, IconLaptop(), IProps, IconStar() (+16 more)
+Cohesion: 0.10
+Nodes (19): UpdatesDao, UpdatesDao_bucketName(), UpdatesDao_metadataKey(), UpdatesDao_pointerKey(), getUpdatesManifestHandler(), ExpoUpdatesProtocol_parseRequestHeaders(), ExpoUpdatesProtocol_serializeMultipart(), IExpoDirective (+11 more)
 
 ### Community 101 - "NSObject"
 Cohesion: 0.13
 Nodes (24): FastTextContentView, FastTextFragmentSpec, FastTextRenderer, FastTextSpec, Bool, CGFloat, CGPoint, CGRect (+16 more)
 
 ### Community 102 - "sitemap.ts"
-Cohesion: 0.11
-Nodes (20): DocDao, main(), IDocIndexEntry, DocDetailsContent(), IDocDetailsContentProps, DocDetailsHtml(), IProps, DocsListContent() (+12 more)
+Cohesion: 0.10
+Nodes (20): DocDao, main(), main(), IDocIndexEntry, DocDetailsContent(), IDocDetailsContentProps, DocDetailsHtml(), IProps (+12 more)
 
 ### Community 103 - "inputNumber2.native.tsx"
 Cohesion: 0.09
-Nodes (29): react-native-haptic-feedback, BottomSheetOrModal(), IProps, clamp(), HAPTIC_OPTIONS, IInputCommitMode, InputNumber2, InputNumber2Inner() (+21 more)
+Nodes (30): react-native-haptic-feedback, BottomSheetOrModal(), IProps, ICustomKeyboardProps, InputNumber2Inner(), clamp(), HAPTIC_OPTIONS, IInputCommitMode (+22 more)
 
 ### Community 104 - "LiftosaurTimerImpl"
 Cohesion: 0.11
@@ -1258,7 +1252,7 @@ Cohesion: 0.12
 Nodes (29): BOOL, DynBuf, DynBufReallocFunc, __maybe_unused, UnicodeNormalizationEnum, compose_pair(), cr_dump(), get_index_pos() (+21 more)
 
 ### Community 108 - "DualLogger"
-Cohesion: 0.14
+Cohesion: 0.15
 Nodes (11): DualLogger, LogFileManager, Logger, RemoteLogManager, Bool, FileHandle, Int, String (+3 more)
 
 ### Community 109 - "LiveUpdateManager"
@@ -1266,36 +1260,36 @@ Cohesion: 0.15
 Nodes (16): android, Boolean, Int, Long, ReadableMap, String, LiveActivityEntry, LiveActivityRest (+8 more)
 
 ### Community 110 - "renderPage"
-Cohesion: 0.09
-Nodes (21): renderAffiliateDashboardHtml(), renderAffiliatesHtml(), renderAiHtml(), renderAllProgramsHtml(), renderLoginHtml(), renderRecordHtml(), renderPage(), renderRepMaxHtml() (+13 more)
+Cohesion: 0.10
+Nodes (21): Account(), AccountLoggedInView(), IAccountLoggedInViewProps, IAccountLoggedOutViewProps, IAccountProps, IconApple(), IconGoogle(), IconGooglePlay() (+13 more)
 
 ### Community 111 - "reanimated.js"
 Cohesion: 0.09
-Nodes (21): ActionSheetModal(), Confetti(), CONFETTI_COLORS, IParticleProps, Particle(), DraggableItem(), ILineChartGesturesArgs, ILineChartGesturesResult (+13 more)
+Nodes (20): ActionSheetModal(), Confetti(), CONFETTI_COLORS, IParticleProps, Particle(), DraggableItem(), ILineChartGesturesArgs, ILineChartGesturesResult (+12 more)
 
 ### Community 112 - "PerfEnabled_tier2"
-Cohesion: 0.17
-Nodes (18): onExerciseProfile(), onProfile(), decision(), PerfEnabled_isEnabled(), PerfEnabled_tier2(), PerfLongTasks_start(), recentActionsSnapshot(), clearPendingTap() (+10 more)
+Cohesion: 0.12
+Nodes (26): onExerciseProfile(), onProfile(), decision(), PerfEnabled_isEnabled(), PerfEnabled_tier2(), usePerfFrameSampling(), PerfLongTasks_start(), recentActionsSnapshot() (+18 more)
 
 ### Community 113 - "footer2.tsx"
-Cohesion: 0.09
-Nodes (26): CreateButton(), Footer2View(), getHasErrorsInProgram(), getNativeShadowStyle(), IconBarbell2(), IconBarbell2Selected(), IconBarbell2Unselected(), IInnerProps (+18 more)
+Cohesion: 0.15
+Nodes (22): IAction, NoRetryError, Thunk_iapHandlePurchaseError(), Thunk_sync2(), IGThunk, IReducerOnIGAction, IThunk, Program_cloneProgram() (+14 more)
 
 ### Community 114 - "LiftosaurTimerModule"
 Cohesion: 0.11
 Nodes (14): Boolean, Double, MediaPlayer, Promise, ReadableMap, String, LiftosaurTimerModule, Boolean (+6 more)
 
 ### Community 115 - "HealthKitManager"
-Cohesion: 0.13
+Cohesion: 0.12
 Nodes (16): HKObjectType, HealthKitManager, Bool, Date, Double, Error, HKAuthorizationStatus, HKLiveWorkoutBuilder (+8 more)
 
 ### Community 116 - "JS_ThrowTypeErrorDetachedArrayBuffer"
-Cohesion: 0.13
-Nodes (31): clz32(), max_int(), JS_ToUint32(), expand_fast_array(), get_typed_array(), js_atomics_get_ptr(), js_atomics_op(), js_atomics_store() (+23 more)
+Cohesion: 0.03
+Nodes (164): unicode_to_utf8(), max_int(), __JS_NewFloat64(), JS_NewInt32(), JS_NewUint32(), JS_ToCString(), JS_ToCStringLen(), JS_VALUE_GET_FLOAT64() (+156 more)
 
 ### Community 117 - "nativeCustomKeyboard.native.tsx"
-Cohesion: 0.08
-Nodes (22): IconBackspace(), IProps, IconBarbell(), IProps, IconCalculator(), IProps, IconFire(), IProps (+14 more)
+Cohesion: 0.14
+Nodes (20): checkForErrors(), collectWorkoutNotes(), commentsToString(), deserializeExerciseLine(), deserializeSetsAsCompleted(), deserializeSetsAsTarget(), deserializeWorkoutRecord(), getChildren() (+12 more)
 
 ### Community 118 - "Built-in functions"
 Cohesion: 0.06
@@ -1318,20 +1312,20 @@ Cohesion: 0.10
 Nodes (21): ComplicationBackground, LiftosaurComplication, LiftosaurComplicationEntry, LiftosaurComplicationProvider, LiftosaurComplicationView, Context, Date, String (+13 more)
 
 ### Community 123 - "FlowResult"
-Cohesion: 0.12
-Nodes (21): FlowLayout, FlowResult, Bool, CGFloat, CGPoint, CGRect, CGSize, Int (+13 more)
+Cohesion: 0.07
+Nodes (28): FlowLayout, FlowResult, Bool, CGFloat, CGPoint, CGRect, CGSize, Int (+20 more)
 
 ### Community 124 - "liftoscriptCodemirror.ts"
-Cohesion: 0.10
-Nodes (18): buildEditorSetup(), buildHighlightStyle(), CodeEditor, IArgs, parser, spec_Keyword, buildLiftoscriptLanguageSupport(), findStateInScope() (+10 more)
+Cohesion: 0.16
+Nodes (13): parser, spec_Keyword, buildLiftoscriptLanguageSupport(), findStateInScope(), liftoscriptLanguage, liftoscriptParserWithMetadata, plannerExerciseStyles, PlannerNodeName (+5 more)
 
 ### Community 125 - "useRem"
-Cohesion: 0.20
-Nodes (24): ExerciseNameLine(), SupersetLine(), Progression(), ReusedByLine(), ReusingLine(), CustomUpdateLabel(), ReusedByLine(), ReusingLine() (+16 more)
+Cohesion: 0.15
+Nodes (8): History_pauseWorkoutAction(), ImageShareUtils, NativeStorage, INativeWorkoutBridgeLiveActivityAction, NativeWorkoutBridge_pauseWorkout(), NativeWorkoutBridge_resumeWorkout(), NativeWorkoutBridge_subscribeToLiveActivityActions(), SendMessage_toIosAndAndroid()
 
 ### Community 126 - "Int"
 Cohesion: 0.17
-Nodes (14): AppIntent, IntentResult, AdjustRestTimerIntent, checkAndEndActivityIfAppKilled(), CompleteSetIntent, OpenWorkoutIntent, OpenWorkoutRecordSetTimerIntent, RecordSetTimerIntent (+6 more)
+Nodes (15): AppIntent, AppIntents, IntentResult, AdjustRestTimerIntent, checkAndEndActivityIfAppKilled(), CompleteSetIntent, OpenWorkoutIntent, OpenWorkoutRecordSetTimerIntent (+7 more)
 
 ### Community 127 - "AmrapModalView"
 Cohesion: 0.18
@@ -1358,12 +1352,12 @@ Cohesion: 0.15
 Nodes (14): LiftosaurShareImpl, String, Void, NativeLiftosaurShareSpec, RCTLiftosaurShare, -getTurboModule, +requiresMainQueueSetup, -shareLogreject (+6 more)
 
 ### Community 133 - "CharRange"
-Cohesion: 0.23
-Nodes (25): cr_add_interval(), cr_add_point(), cr_union_interval(), CharRange, CharRange, cr_init_char_range(), parse_unicode_property(), CharRange (+17 more)
+Cohesion: 0.20
+Nodes (27): lre_js_is_ident_first(), cr_add_interval(), cr_add_point(), cr_union_interval(), CharRange, CharRange, cr_init_char_range(), parse_unicode_property() (+19 more)
 
 ### Community 134 - "styledText.ts"
-Cohesion: 0.13
-Nodes (21): FastText(), fragmentCss(), normalizeFontWeight(), numberOfLinesCss(), FONT_WEIGHT_CLASSES, hasStyle(), IFastTextAlign, IFastTextBuild (+13 more)
+Cohesion: 0.10
+Nodes (25): FastText(), fragmentCss(), FastText(), processFragmentColor(), scaleFontSize(), normalizeFontWeight(), numberOfLinesCss(), NativeFragment (+17 more)
 
 ### Community 135 - "BaseReactPackage"
 Cohesion: 0.08
@@ -1374,8 +1368,8 @@ Cohesion: 0.08
 Nodes (24): Can I run just the Bullmastiff base phase without peaking?, Common Modifications, Do I need a deload week during Bullmastiff?, Equipment Needed, Example of accessory lift volume pattern week over week, Example of developmental lift volume pattern week over week, Example of main lift sets/reps/weight week over week, Example of targeted lift volume pattern week over week (+16 more)
 
 ### Community 137 - "tourModal.tsx"
-Cohesion: 0.14
-Nodes (18): IconCloseCircleOutline(), IProps, IconDayTextMode(), IProps, IconUiMode(), IProps, getPlannerFromState(), isProgramEmpty() (+10 more)
+Cohesion: 0.03
+Nodes (102): displayName, name, App(), AppInner(), globalAny, IRollbarFrame, IRollbarPayload, rewriteRollbarFrames() (+94 more)
 
 ### Community 138 - "LftUpdater"
 Cohesion: 0.21
@@ -1386,8 +1380,8 @@ Cohesion: 0.08
 Nodes (23): Alpha / Semi-Transparent Colors, Auto-hidden Features on Native, Cross-Platform Draggable List (gesture-handler + reanimated), Cross-Platform SVG Charts, Expand/Collapse Animation with LayoutAnimation, FlatList pagingEnabled Alignment, High-Frequency State Updates Cause Text to Lose Styling, Host Configuration (+15 more)
 
 ### Community 140 - "userDashboardContent.tsx"
-Cohesion: 0.15
-Nodes (13): EventDao, renderUserDashboardHtml(), IEventPayload, EventView(), IEventsPage, IEventViewProps, IUserDashboardContentProps, IUserDashboardData (+5 more)
+Cohesion: 0.12
+Nodes (18): renderUserDashboardHtml(), cachePromises, IAiConvertResponse, IGetStorageResponse, IPostStorageResponse, IRecordResponse, IRedeemCouponError, ISubscriptionServerDetails (+10 more)
 
 ### Community 141 - "calgary-barbell-16-week.md"
 Cohesion: 0.08
@@ -1398,20 +1392,20 @@ Cohesion: 0.08
 Nodes (23): Bench Press week over week, Can I run the Cube Method without competing?, Common Modifications, Deadlift week over week, Equipment Needed, Exercise Selection & Rationale, How does the Cube Method compare to 5/3/1?, How long is one Cube Method cycle? (+15 more)
 
 ### Community 143 - "programDao.ts"
-Cohesion: 0.15
-Nodes (16): buildProgram(), getCdnHost(), IProgramPayload, ProgramDao, programOrder, getProgramDetailsHandler(), buildPrograms(), collectMdFiles() (+8 more)
+Cohesion: 0.12
+Nodes (8): IProps, AudioInterface, IAudioInterface, MockAudioInterface, AsyncQueue, AsyncQueueTimeoutError, IAsyncQueueOptions, IQueueItem
 
 ### Community 144 - "barbell-medicine-the-bridge.md"
 Cohesion: 0.09
 Nodes (22): Can I run The Bridge on a cut?, Common Modifications, Competition lift volume wave (Squat, Day 1), Equipment Needed, Exercise Selection & Rationale, How do I know what weight to use for RPE targets?, How long are The Bridge training sessions?, How Long to Run It / What Next (+14 more)
 
 ### Community 145 - "programsPageContent.tsx"
-Cohesion: 0.19
-Nodes (19): builtinProgramAges, builtinProgramAgesKeys, builtinProgramDurations, builtinProgramDurationsKeys, builtinProgramFrequencies, builtinProgramFrequenciesKeys, builtinProgramGoals, IBuiltinProgramAge (+11 more)
+Cohesion: 0.12
+Nodes (28): renderAllProgramsHtml(), BuiltinProgramsList(), builtinProgramAges, builtinProgramAgesKeys, builtinProgramDurations, builtinProgramDurationsKeys, builtinProgramFrequencies, builtinProgramFrequenciesKeys (+20 more)
 
 ### Community 146 - "PlannerEditor"
 Cohesion: 0.11
-Nodes (10): renderAiPromptHtml(), AiContent(), AiPromptContent(), AiPromptHtml(), IAiPromptHtmlProps, PlannerEditor, IProps, ProgramPreviewHtml() (+2 more)
+Nodes (19): programOrder, buildPrograms(), collectMdFiles(), getGitDates(), outputDir, programsOutputDir, programsSources, PlannerEditor (+11 more)
 
 ### Community 147 - "bro-split.md"
 Cohesion: 0.09
@@ -1438,16 +1432,16 @@ Cohesion: 0.09
 Nodes (21): Can I run Tactical Barbell Operator alongside conditioning?, Common Modifications, Equipment Needed, Example of main lift sets/reps/weight week over week, Exercise Selection & Rationale, How does progression work on Tactical Barbell Operator?, How long should I run Tactical Barbell Operator?, How Long to Run It / What Next (+13 more)
 
 ### Community 153 - "scriptEditor.ts"
-Cohesion: 0.14
-Nodes (10): buildHighlightStyle(), ErrorGutterMarker, getEditorSetup(), IArgs, IEditorCompartments, ScriptEditor, IEvalResultProps, IProps (+2 more)
+Cohesion: 0.15
+Nodes (9): buildHighlightStyle(), ErrorGutterMarker, getEditorSetup(), IArgs, IEditorCompartments, ScriptEditor, IEvalResultProps, IProps (+1 more)
 
 ### Community 154 - "nativeWorkoutMirroringBridge.native.ts"
 Cohesion: 0.13
 Nodes (11): Spec, WorkoutMirroringEvent, getModule(), INativeWorkoutMirroringEvent, NativeWorkoutMirroring_endWatchWorkout(), NativeWorkoutMirroring_isHealthKitAvailable(), NativeWorkoutMirroring_pauseWatchWorkout(), NativeWorkoutMirroring_resetWatchWorkoutState() (+3 more)
 
 ### Community 155 - "health.ios.ts"
-Cohesion: 0.15
-Nodes (14): ILengthUnit, ALL_WRITE_TYPES, clampWorkoutEnd(), HealthAdapter, lengthUnitArg(), LIFTOSAUR_META, massUnitArg(), MEASUREMENT_READ_TYPES (+6 more)
+Cohesion: 0.09
+Nodes (22): ILengthUnit, HealthAdapter, ALL_WRITE_TYPES, clampWorkoutEnd(), HealthAdapter, lengthUnitArg(), LIFTOSAUR_META, massUnitArg() (+14 more)
 
 ### Community 156 - "LiftosaurLiveActivityModule"
 Cohesion: 0.13
@@ -1546,12 +1540,12 @@ Cohesion: 0.10
 Nodes (19): 10. Playwright E2E Tests, 11. Create Pull Request, 12. Cleanup, 1. Create Isolated Worktree, 2. Load Pre-fetched Data, 3. Parse User State and Actions, 4. Review User Events Timeline, 5. Review Server Logs (if available) (+11 more)
 
 ### Community 180 - "ImageCacheManager"
-Cohesion: 0.16
-Nodes (11): ImageCacheManager, Bool, Image, Int64, String, URL, ExerciseImageView, CGFloat (+3 more)
+Cohesion: 0.15
+Nodes (10): LftUpdaterPath, String, URL, ImageCacheManager, Bool, Image, Int64, String (+2 more)
 
 ### Community 181 - "JS_ToFloat64"
-Cohesion: 0.17
-Nodes (20): days_from_year(), days_in_year(), floor_div(), get_date_field(), get_date_fields(), getTimezoneOffset(), js_date_getTime(), js___date_getTimezoneOffset() (+12 more)
+Cohesion: 0.16
+Nodes (22): JS_IsNumber(), days_from_year(), days_in_year(), floor_div(), get_date_field(), get_date_fields(), getTimezoneOffset(), js_date_getTime() (+14 more)
 
 ### Community 183 - "mike-mentzer-consolidated.md"
 Cohesion: 0.10
@@ -1562,8 +1556,8 @@ Cohesion: 0.10
 Nodes (19): Can I run WS4SB on a cut?, Common Modifications, Equipment Needed, Exercise Selection & Rationale, How does exercise rotation work in WS4SB?, How long should WS4SB sessions take?, How Long to Run It / What Next, How many days a week is Westside for Skinny Bastards? (+11 more)
 
 ### Community 185 - "IAllCustomExercises"
-Cohesion: 0.26
-Nodes (13): IProps, IWebviewEditorProps, IWebviewEditorProps, WebviewEditor(), IProps, IProps, IPlannerMainSettings, IEditorError (+5 more)
+Cohesion: 0.20
+Nodes (17): IProps, IWebviewEditorProps, IWebviewEditorProps, WebviewEditor(), WebviewEditor(), IProps, IProps, IPlannerMainSettings (+9 more)
 
 ### Community 186 - "markdownEditorBorderless.native.tsx"
 Cohesion: 0.15
@@ -1571,11 +1565,11 @@ Nodes (14): buildMarkdownStyle(), estimateHeight(), IProps, MarkdownEditorBorder
 
 ### Community 187 - "length.ts"
 Cohesion: 0.17
-Nodes (18): comparison(), Length_add(), Length_compare(), Length_compareReverse(), Length_convertTo(), Length_divide(), Length_eq(), Length_gt() (+10 more)
+Nodes (19): comparison(), Length_add(), Length_build(), Length_compare(), Length_compareReverse(), Length_convertTo(), Length_divide(), Length_eq() (+11 more)
 
 ### Community 188 - "ModalStateContext.tsx"
 Cohesion: 0.11
-Nodes (18): IExerciseImageLibraryResult, IExerciseMusclesPickerModalData, IExerciseTypesPickerModalData, IInputSelectModalData, IModalAction, IModalDataMap, IModalDispatch, IModalState (+10 more)
+Nodes (39): AppContext, BottomSheetItem(), IProps, NavModalExerciseCloneLibrary(), NavModalExerciseImageLibrary(), NavModalExerciseImageSource(), NavModalExerciseMusclesPicker(), NavModalExerciseTypesPicker() (+31 more)
 
 ### Community 189 - "LiftosaurEventReporterModule"
 Cohesion: 0.12
@@ -1590,8 +1584,8 @@ Cohesion: 0.11
 Nodes (18): AMRAP sets, Ask weight, Common Mistakes, Idiomatic Liftoscript Patterns, Labels for same exercise with different roles, Percentage-based programs, Progression patterns, Repeat exercises with `[1-N]`, define only in Week 1 (+10 more)
 
 ### Community 192 - "healthAdapter.ts"
-Cohesion: 0.22
-Nodes (9): IStatDb, ILength, IHealthMeasurement, IHealthMeasurementsPayload, IHealthMeasurementType, IHealthSyncArgs, IHealthSyncResult, IHealthWorkoutPayload (+1 more)
+Cohesion: 0.09
+Nodes (23): IStatDb, IViewProps, IUpdates, IValue, IWeightLinesUnsubscribedProps, WeightLinesUnsubscribed(), assert(), getChildren() (+15 more)
 
 ### Community 193 - "basicBeginner.md"
 Cohesion: 0.11
@@ -1678,16 +1672,20 @@ Cohesion: 0.11
 Nodes (10): NativeLftUpdaterSpec, RCTLftUpdater, -activeBundleIdreject, -checkAndDownloadreject, -getTurboModule, -markLaunchSuccessfulreject, +requiresMainQueueSetup, -revertToEmbeddedreject (+2 more)
 
 ### Community 214 - "WatchCacheManager"
-Cohesion: 0.22
-Nodes (9): Bool, Date, Int, Never, String, Task, TimeInterval, URL (+1 more)
+Cohesion: 0.16
+Nodes (11): Bool, Date, Int, Never, String, Task, TimeInterval, URL (+3 more)
 
 ### Community 215 - "Notifications"
-Cohesion: 0.20
-Nodes (7): Notifications, Float, String, TimeInterval, SharedMessageHandler, String, UNUserNotificationCenter
+Cohesion: 0.13
+Nodes (10): IProgramMode, IScriptBindings, IScriptFnContext, hasKeywordMemoized, ScriptRunner, bindings, fns, result (+2 more)
+
+### Community 216 - "EnvSecretsUtil"
+Cohesion: 0.17
+Nodes (8): IPriceCacheEntry, IIapActiveSubscription, IIapAndroidReplacementMode, IIapApplePromoOffer, IIapInAppProduct, IIapRequestSubscriptionArgs, IIapSubscriptionOffer, IIapSubscriptionProduct
 
 ### Community 217 - "usersContent.tsx"
-Cohesion: 0.18
-Nodes (12): AdminHtml(), IProps, renderAdminHtml(), ILog, ILogPayload, IProps, renderLogsHtml(), IProcessedUser (+4 more)
+Cohesion: 0.16
+Nodes (14): AdminHtml(), IProps, renderAdminHtml(), ILogsContentProps, ILog, ILogPayload, ILogPayloads, IProps (+6 more)
 
 ### Community 218 - "RCTLiftosaurImageResizer"
 Cohesion: 0.17
@@ -1696,10 +1694,6 @@ Nodes (12): CGImageSource, LiftosaurImageResizerImpl, Double, String, Void, Nati
 ### Community 219 - "Write Weightlifting Program"
 Cohesion: 0.12
 Nodes (16): 1. Create Isolated Worktree, 2. Learn Liftoscript, 3. Write the Program, 3a. Research Phase (CRITICAL - Do This Thoroughly), 3b. Learning Liftoscript, 3c. Output Format, Bash Command Guidelines, Description (+8 more)
-
-### Community 220 - "transform.ts"
-Cohesion: 0.20
-Nodes (14): AbstractObject, findTargets(), getMemberDeclaration(), IMemberMapping, ITarget, main(), processTarget(), unwrapNamespace() (+6 more)
 
 ### Community 221 - "LftUpdaterModule"
 Cohesion: 0.15
@@ -1710,16 +1704,16 @@ Cohesion: 0.13
 Nodes (14): LayoutConstraints, shared_ptr, Size, FastTextMeasuringShadowNode, measureContent, measurementsManager_, setFastTextMeasurementsManager, FastTextComponentName (+6 more)
 
 ### Community 223 - "SetTimerScreen"
-Cohesion: 0.16
-Nodes (9): SetTimerScreen, Bool, CGFloat, Color, Double, Int, String, Timer (+1 more)
+Cohesion: 0.18
+Nodes (8): SetTimerScreen, CGFloat, Color, Double, Int, String, Timer, Void
 
 ### Community 224 - "modulesProvider"
-Cohesion: 0.12
-Nodes (16): javaPackageName, codegenConfig, android, ios, jsSrcsDir, name, type, modulesProvider (+8 more)
+Cohesion: 0.08
+Nodes (23): javaPackageName, author, codegenConfig, android, ios, jsSrcsDir, name, type (+15 more)
 
 ### Community 225 - "importFromHevy.ts"
-Cohesion: 0.22
-Nodes (15): History_generateId(), buildHevyWeight(), collectHevyWarnings(), exerciseMapping, hevyMonths, IHevyRecord, IHevyStruct, IHevyStructExercise (+7 more)
+Cohesion: 0.08
+Nodes (43): History_createCustomEntry(), History_generateId(), Program_getProgramDayExercises(), Program_nextHistoryEntry(), Progress_getEntryId(), ProgramDetailsExerciseExample(), ICustomExercise, VHistoryRecord (+35 more)
 
 ### Community 226 - "Advanced"
 Cohesion: 0.13
@@ -1742,8 +1736,8 @@ Cohesion: 0.19
 Nodes (10): Segment, minutes, seconds, SetTimerEditScreen, Bool, CGFloat, Double, Int (+2 more)
 
 ### Community 231 - "SetFormatters"
-Cohesion: 0.28
-Nodes (9): ColoredSetInfoView, ColoredTargetInfoView, SetColors, SetFormatters, Bool, Double, Int, SetInfoProvider (+1 more)
+Cohesion: 0.07
+Nodes (31): EnvironmentKey, LiftosaurColor, Color, String, HeartRateView, Bool, CGFloat, Double (+23 more)
 
 ### Community 232 - "SetInfoViews.swift"
 Cohesion: 0.28
@@ -1762,12 +1756,12 @@ Cohesion: 0.17
 Nodes (10): DraggableListItem(), IData, IDraggableListItemProps, IDraggableListProps, IDraggableMode, HtmlUtils_classInParents(), HtmlUtils_getPointX(), HtmlUtils_getPointY() (+2 more)
 
 ### Community 236 - "PlannerExerciseEvaluatorText"
-Cohesion: 0.20
-Nodes (7): PlannerProgram_topLineItems(), fullTextLineToWeekdayDescription(), getChildren(), IPlannerExerciseEvaluatorTextDay, IPlannerExerciseEvaluatorTextWeek, IPlannerNonExerciseFullTextLine, PlannerExerciseEvaluatorText
+Cohesion: 0.22
+Nodes (6): fullTextLineToWeekdayDescription(), getChildren(), IPlannerExerciseEvaluatorTextDay, IPlannerExerciseEvaluatorTextWeek, IPlannerNonExerciseFullTextLine, PlannerExerciseEvaluatorText
 
 ### Community 238 - "importFromLiftosaur.ts"
-Cohesion: 0.21
-Nodes (14): availableMuscles, VHistoryRecord, CollectionUtils_groupByKey(), collectWarnings(), columns, IColumn, ILiftosaurRecord, ImportFromLiftosaur_convertLiftosaurCsvToHistoryRecords() (+6 more)
+Cohesion: 0.30
+Nodes (10): IImporterLiftosaurCsvProps, ImporterLiftosaurCsv(), IImporterProgramProps, ImporterProgram(), IImporterStorageProps, ImporterStorage(), Thunk_importStorage(), FileImport_confirm() (+2 more)
 
 ### Community 239 - "webpack.config.js"
 Cohesion: 0.13
@@ -1794,17 +1788,13 @@ Nodes (5): Context, File, SharedPreferences, String, LftUpdaterPath
 Cohesion: 0.30
 Nodes (6): File, Promise, String, LiftosaurShareModule, NativeLiftosaurShareSpec, Uri
 
-### Community 242 - "simpleMarkdown.tsx"
-Cohesion: 0.23
-Nodes (12): IconDiscord(), IProps, collectInlineUntil(), findMatchingClose(), IBlockResult, IProps, md, pushTextWithIcons() (+4 more)
-
 ### Community 243 - "ota.native.ts"
 Cohesion: 0.15
 Nodes (5): ICheckAndDownloadResult, Spec, IRollbarShim, logRollbarWarn(), Ota_init()
 
 ### Community 244 - "health.android.ts"
-Cohesion: 0.16
-Nodes (11): clampWorkoutEnd(), IBodyFatRecordResult, IHealthRecord, IMassResult, IWeightRecordResult, MEASUREMENT_WRITE_PERMISSIONS, READ_PERMISSIONS, WORKOUT_WRITE_PERMISSIONS (+3 more)
+Cohesion: 0.13
+Nodes (14): clampWorkoutEnd(), ensureInitialized(), HealthAdapter, IBodyFatRecordResult, IHealthRecord, IMassResult, IWeightRecordResult, MEASUREMENT_WRITE_PERMISSIONS (+6 more)
 
 ### Community 246 - "OnLoad.cpp"
 Cohesion: 0.22
@@ -1827,16 +1817,16 @@ Cohesion: 0.27
 Nodes (13): clz64(), bf_get_exp_bits(), bf_flags_t, __bf_div(), bf_normalize_and_round(), bf_resize(), __bf_round(), bf_set_float64() (+5 more)
 
 ### Community 251 - "usersDashboardContent.tsx"
-Cohesion: 0.28
-Nodes (9): renderUsersDashboardHtml(), getIsNew(), getIsNewUser(), IUsersDashboardContentProps, IUsersDashboardData, UsersDashboardContent(), IUsersDashboardHtmlProps, UsersDashboardHtml() (+1 more)
+Cohesion: 0.33
+Nodes (8): renderUsersDashboardHtml(), getIsNew(), getIsNewUser(), IUsersDashboardContentProps, IUsersDashboardData, UsersDashboardContent(), IUsersDashboardHtmlProps, UsersDashboardHtml()
 
 ### Community 252 - "Application of the GZCL Principle to the Jacked And Tan 2.0 program"
 Cohesion: 0.15
 Nodes (12): Application of the GZCL Principle to the Jacked And Tan 2.0 program, Can I swap exercises in Jacked and Tan 2.0?, Example of a T1 exercise sets/reps/weight week over week, GZCL principle, How do the Rep Max sets work in Jacked and Tan 2.0?, How long is the Jacked and Tan 2.0 program?, How many days a week is Jacked and Tan 2.0?, Is Jacked and Tan 2.0 good for beginners? (+4 more)
 
 ### Community 253 - "analytics.native.ts"
-Cohesion: 0.22
-Nodes (9): IAttributionData, IAnalyticsInitOptions, Analytics_initialize(), Analytics_trackPurchase(), getTrackedPurchaseIds(), IAnalyticsInitOptions, IAnalyticsPurchaseEvent, landingPageFromDeepLink() (+1 more)
+Cohesion: 0.29
+Nodes (6): Analytics_initialize(), Analytics_trackPurchase(), getTrackedPurchaseIds(), IAnalyticsPurchaseEvent, landingPageFromDeepLink(), markPurchaseTracked()
 
 ### Community 254 - "perfScorecard.native.ts"
 Cohesion: 0.31
@@ -1899,8 +1889,8 @@ Cohesion: 0.17
 Nodes (11): 1. Add the Widget Extension target, 2. Add this folder to the new target, 3. Share `WorkoutAttributes.swift` between targets, 4. Build Settings on `LiftosaurWorkoutWidgetExtension`, 5. Signing & Capabilities (both targets), 6. Verify the Embed Foundation Extensions phase, 7. Refresh CocoaPods, 8. First build (+3 more)
 
 ### Community 270 - "BOOL"
-Cohesion: 0.23
-Nodes (11): lre_js_is_ident_first(), BOOL, is_line_terminator(), is_unicode_char(), is_word_char(), lre_exec_backtrack(), lre_is_space(), push_state() (+3 more)
+Cohesion: 0.31
+Nodes (9): lre_exec(), lre_exec_backtrack(), lre_get_capture_count(), lre_realloc(), main(), push_state(), REExecContext, REExecStateEnum (+1 more)
 
 ### Community 271 - "window.d.ts"
 Cohesion: 0.17
@@ -1935,16 +1925,12 @@ Cohesion: 0.17
 Nodes (11): Application of the GZCL Principle to the VDIP program, GZCL principle, How does progression work in GZCL VDIP?, How long should I run GZCL VDIP?, How many days a week is GZCL VDIP?, Is GZCL VDIP good for beginners?, T1 Exercise, T2 Exercise (+3 more)
 
 ### Community 279 - "generate-theme-css.js"
-Cohesion: 0.17
-Nodes (11): baseColors, baseFlat, darkFlat, emitVars(), flatten(), fs, lightFlat, outPath (+3 more)
-
-### Community 280 - "Setup"
-Cohesion: 0.17
-Nodes (11): 1. Google OAuth client (for login), 2. Configure, 3. Build the frontend, 4. Run, 5. Verify locally, 6. Phone access (Android PWA), Important invariants, Known degradations (by design) (+3 more)
+Cohesion: 0.37
+Nodes (10): BottomSheetOrModalMuscleGroupsContent(), IBottomSheetOrModalMuscleGroupsContentProps, ScreenMuscleGroups(), Muscle_createMuscleGroup(), Muscle_deleteMuscleGroup(), Muscle_isDefaultMuscles(), Muscle_restoreMuscleGroup(), Muscle_updateMuscleGroup() (+2 more)
 
 ### Community 281 - "editorWebviewEntry.ts"
-Cohesion: 0.35
-Nodes (11): WebviewEditor(), IHostToWebview, applyTheme(), buildPlannerEditor(), buildScriptEditor(), IAnyEditor, init(), observeHeight() (+3 more)
+Cohesion: 0.53
+Nodes (8): applyTheme(), buildPlannerEditor(), buildScriptEditor(), IAnyEditor, init(), observeHeight(), postToHost(), recv()
 
 ### Community 282 - "promptHost.native.tsx"
 Cohesion: 0.24
@@ -1958,9 +1944,13 @@ Nodes (4): useReportSheetHeight(), FormSheet(), IProps, Region
 Cohesion: 0.17
 Nodes (11): ButtonHTMLAttributes, FormHTMLAttributes, HTMLAttributes, InputHTMLAttributes, LabelHTMLAttributes, LiHTMLAttributes, react, react-native (+3 more)
 
+### Community 286 - "HealthAdapter"
+Cohesion: 0.17
+Nodes (3): IModalCreateStateVariableProps, ModalCreateStateVariableContent(), Gesture
+
 ### Community 287 - "importTypes.ts"
-Cohesion: 0.21
-Nodes (8): hevySignatureHeaders, IImportResult, IImportRowError, IImportSummary, ImportUtils_findDuplicates(), ImportUtils_summarize(), liftosaurSignatureHeaders, minTimestamp
+Cohesion: 0.24
+Nodes (4): buildEditorSetup(), buildHighlightStyle(), CodeEditor, IArgs
 
 ### Community 288 - "Intent"
 Cohesion: 0.29
@@ -2215,8 +2205,12 @@ Cohesion: 0.20
 Nodes (4): INavigationLike, IProps, IState, ScreenErrorBoundary
 
 ### Community 352 - "repMaxContent.tsx"
-Cohesion: 0.31
-Nodes (9): Weight_calculateRepMax(), IOtherRepMaxesProps, IRepMaxContentProps, OtherRepMaxes(), RepMaxContent(), RepMaxInfo(), IProps, RepMaxHtml() (+1 more)
+Cohesion: 0.24
+Nodes (11): Weight_calculateRepMax(), IOtherRepMaxesProps, IRepMaxContentProps, OtherRepMaxes(), RepMaxContent(), RepMaxInfo(), TMConverter(), IProps (+3 more)
+
+### Community 353 - "IHealthAdapter"
+Cohesion: 0.36
+Nodes (8): HOSTS, IStage, main(), replaceAndroidManifestURL(), replaceIosManifestURL(), replaceNativeHosts(), resolveStage(), syncFile()
 
 ### Community 354 - "compilerOptions"
 Cohesion: 0.18
@@ -3035,8 +3029,8 @@ Cohesion: 0.31
 Nodes (9): JSMallocState, malloc_count, malloc_limit, malloc_size, opaque, js_def_free(), js_def_malloc(), js_def_malloc_usable_size() (+1 more)
 
 ### Community 558 - "affiliateDashboard.tsx"
-Cohesion: 0.44
-Nodes (6): AffiliateDashboardContent(), IAffiliateDashboardContentProps, IAffiliateDashboardSummary, IAffiliateData, AffiliateDashboardHtml(), IAffiliateDashboardHtmlProps
+Cohesion: 0.39
+Nodes (5): EventManager_initTelemetry(), EventManager_isAvailable(), EventManager_log(), IEventManagerTelemetryHandler, LogUtils_log()
 
 ### Community 559 - "Application of the GZCL Principle to the Burrito But Big program"
 Cohesion: 0.22
@@ -3051,12 +3045,12 @@ Cohesion: 0.22
 Nodes (6): entries, files, IEntry, IHowToStep, inputDir, outputFile
 
 ### Community 562 - "selectLink.tsx"
-Cohesion: 0.31
-Nodes (6): DropdownMenu(), DropdownMenuItem(), IDropdownMenuItemProps, ISelectLinkProps, SelectLink(), useIsModalAvailable()
+Cohesion: 0.38
+Nodes (3): AudioInterface, IAudioInterface, MockAudioInterface
 
 ### Community 563 - "importFromLiftosaur.test.ts"
-Cohesion: 0.22
-Nodes (3): ImportFileError, buildSettings(), buildSettings()
+Cohesion: 0.60
+Nodes (4): EditCustomExercise_createOrUpdate(), EditCustomExercise_markDeleted(), EditCustomExerciseLenses_createOrUpdate(), EditCustomExerciseLenses_markDeleted()
 
 ### Community 564 - "indexeddb.native.ts"
 Cohesion: 0.28
@@ -3255,16 +3249,16 @@ Cohesion: 0.25
 Nodes (7): Common Mistakes:, Engage and Stabilize, Instructions:, Roll Up, Set Up Equipment, Tips:, Unwind Back Down
 
 ### Community 613 - "HomeScreen"
-Cohesion: 0.32
-Nodes (6): HomeScreen, Bool, Date, Double, String, Void
+Cohesion: 0.47
+Nodes (4): IWhatsNew, NavModalWhatsnew(), IScrollEventLike, useScrollProgressiveList()
 
 ### Community 614 - "Distance"
 Cohesion: 0.25
 Nodes (3): Distance, Expand, Pinch
 
 ### Community 615 - "package.json"
-Cohesion: 0.25
-Nodes (7): author, description, license, main, name, sideEffects, version
+Cohesion: 0.40
+Nodes (3): BundledImages_resolve(), bundledRaster, bundledSvg
 
 ### Community 616 - "programDetailsExerciseExampleGraph.tsx"
 Cohesion: 0.36
@@ -3318,10 +3312,6 @@ Nodes (6): Establish Your Stance, Press Back Up, Set Up the Cable and Grip, Squa
 Cohesion: 0.29
 Nodes (6): Curl Up, Execution:, Key Points:, Lower with Resistance, Set Up, Setup:
 
-### Community 629 - "LftUpdaterPath"
-Cohesion: 0.48
-Nodes (3): LftUpdaterPath, String, URL
-
 ### Community 630 - "zingtouch.d.ts"
 Cohesion: 0.29
 Nodes (6): GestureEvent, PanOptions, RegionGestures, SwipeOptions, TapOptions, zingtouch
@@ -3334,17 +3324,9 @@ Nodes (6): Can I substitute exercises in Arnold's Golden Six?, How does progress
 Cohesion: 0.29
 Nodes (6): Can I reduce the volume in GGBB?, How is GGBB different from regular General Gainz?, How many days a week is GGBB?, Is GZCL General Gainz Bodybuilding good for hypertrophy?, What does the superset structure look like in GGBB?, What experience level do I need for GGBB?
 
-### Community 635 - "input.native.tsx"
-Cohesion: 0.29
-Nodes (4): IInputHandle, Input, IProps, IValidationError
-
-### Community 636 - "fastText.native.tsx"
-Cohesion: 0.38
-Nodes (5): FastText(), processFragmentColor(), scaleFontSize(), NativeFragment, NativeProps
-
 ### Community 638 - "imageCache.native.ts"
-Cohesion: 0.38
-Nodes (5): ImageCache_download(), ImageCache_initialUri(), inFlight, knownMissing, pathFor()
+Cohesion: 0.19
+Nodes (8): UrlDao, ImageCache_download(), ImageCache_initialUri(), inFlight, knownMissing, pathFor(), StringUtils_hashCode(), StringUtils_hashString()
 
 ### Community 640 - "useRem.native.ts"
 Cohesion: 0.38
@@ -3369,10 +3351,6 @@ Nodes (5): Android Emulator (mobile-mcp), iOS Simulator (ios-simulator-mcp — P
 ### Community 645 - ".eleventy.js"
 Cohesion: 0.33
 Nodes (5): fs, path, { PlannerHighlighter_highlight }, pluginRss, syntaxHighlight
-
-### Community 646 - "WatchLayout.swift"
-Cohesion: 0.53
-Nodes (5): EnvironmentKey, EnvironmentValues, NavbarHeightKey, ScreenWidthKey, CGFloat
 
 ### Community 647 - "backextension_bodyweight.md"
 Cohesion: 0.33
@@ -3414,21 +3392,9 @@ Nodes (5): Contributing, Features, How to run locally, Implementation details, �
 Cohesion: 0.33
 Nodes (5): gestureHandlerStub, Module, path, reanimatedStub, uniwindShim
 
-### Community 657 - "create-selfhost-tables.ts"
-Cohesion: 0.40
-Nodes (5): IKeyDef, ITableDef, keySchema(), main(), tables
-
-### Community 658 - "extractMuscleSprites.js"
-Cohesion: 0.40
-Nodes (5): fs, parseSpriteByGroups(), path, processSvgFile(), repoRoot
-
-### Community 659 - "muscleGroupImage.native.tsx"
-Cohesion: 0.47
-Nodes (4): IMuscleImageProps, MuscleGroupImage(), resolveCssVars(), MUSCLE_GROUP_SPRITES
-
 ### Community 660 - "muscleImage.native.tsx"
-Cohesion: 0.47
-Nodes (4): IMuscleImageProps, MuscleImage(), resolveCssVars(), MUSCLE_SPRITES
+Cohesion: 0.22
+Nodes (7): outputDir, IMuscleImageProps, MuscleImage(), resolveCssVars(), MUSCLE_SPRITES, exerciseDescriptions, IExerciseHowToStep
 
 ### Community 661 - "weekCalendarPager.tsx"
 Cohesion: 0.33
@@ -3598,21 +3564,13 @@ Nodes (4): ConsentMode_fromCountry(), EEA_AND_UK, IConsentMode, OPT_OUT_COUNTRIE
 Cohesion: 0.40
 Nodes (4): fs, grammarFiles, markdownFiles, path
 
-### Community 707 - "input2.tsx"
-Cohesion: 0.40
-Nodes (3): Input2, IProps, IValidationError
-
-### Community 708 - "textarea2.tsx"
-Cohesion: 0.40
-Nodes (3): IProps, IValidationError, Textarea2
+### Community 709 - "NativeLiftosaurImageResizer.ts"
+Cohesion: 0.18
+Nodes (5): ImageSize, Spec, IImageResizeLayout, ImageResizeLayout_compute(), ImageUploader
 
 ### Community 710 - "NativeLiftosaurTimer.ts"
 Cohesion: 0.40
 Nodes (4): LiftosaurTimerFiredEvent, LiftosaurTimerPermissionStatus, LiftosaurTimerStartParams, LiftosaurTimerStartResult
-
-### Community 712 - "perfSampling.ts"
-Cohesion: 0.60
-Nodes (3): IPerfSamplingDecision, PerfSampling_decide(), PerfSampling_decideFor()
 
 ### Community 714 - "webpack.lambda.config.js"
 Cohesion: 0.40
@@ -3735,23 +3693,23 @@ Cohesion: 0.67
 Nodes (3): For `progress: custom()`:, For `update: custom()`:, Predefined read-only variables
 
 ## Knowledge Gaps
-- **5945 isolated node(s):** `pluginRss`, `syntaxHighlight`, `path`, `fs`, `{ PlannerHighlighter_highlight }` (+5940 more)
+- **5926 isolated node(s):** `Project Structure`, `Important Files`, `Web (Playwright MCP)`, `iOS Simulator (ios-simulator-mcp — PREFERRED for iOS)`, `Android Emulator (mobile-mcp)` (+5921 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **69 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **72 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `SetTimerScreen` connect `SetTimerScreen` to `ExerciseScreen`, `View`, `WorkoutManager`?**
+- **Why does `ScreenEquipment()` connect `benchmark.py` to `Tailwind_colors`, `NavScreenMe.native.tsx`, `exercise.ts`, `ISettings`, `thunks.ts`, `program.ts`?**
   _High betweenness centrality (0.020) - this node is a cross-community bridge._
-- **Why does `ObjectUtils_keys()` connect `exercise.ts` to `userDashboardContent.tsx`, `benchmark.py`, `progress.ts`, `ISettings`, `thunks.ts`, `index.ts`, `AppNavigator.native.tsx`, `program.ts`, `reducer.ts`, `screenSubscription.tsx`, `Object`, `types.ts`, `IDI`, `Tailwind_colors`, `NavScreenMe.native.tsx`, `text.tsx`, `workoutExerciseSet.tsx`, `utils.ts`, `Utils_getEnv`, `selectLink.tsx`, `LiftosaurWatch`, `plannerEvaluator.ts`, `date.ts`, `MockHeaders`?**
-  _High betweenness centrality (0.017) - this node is a cross-community bridge._
-- **Why does `ScreenEquipment()` connect `NavScreenMe.native.tsx` to `benchmark.py`, `WorkoutManager`, `exercise.ts`, `thunks.ts`, `AppNavigator.native.tsx`?**
-  _High betweenness centrality (0.016) - this node is a cross-community bridge._
+- **Why does `SetTimerScreen` connect `SetTimerScreen` to `ExerciseScreen`, `View`, `benchmark.py`, `WorkoutManager`?**
+  _High betweenness centrality (0.019) - this node is a cross-community bridge._
+- **Why does `WorkoutConfigurationHandler` connect `WatchCacheManager` to `Foundation`, `Tailwind_colors`, `NSObject`?**
+  _High betweenness centrality (0.018) - this node is a cross-community bridge._
 - **Are the 391 inferred relationships involving `JS_FreeValue()` (e.g. with `__JS_FreeValue()` and `add_fast_array_element()`) actually correct?**
   _`JS_FreeValue()` has 391 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `Caveman compress scripts.  This package provides tools to compress natural langu`, `Split YAML frontmatter from body. Returns (frontmatter, body).      Memory files`, `Resolve the out-of-tree backup directory for a given source file.      Backups m` to the rest of the system?**
-  _5957 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `Project Structure`, `Important Files`, `Web (Playwright MCP)` to the rest of the system?**
+  _5938 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Account & Equipment Settings UI` be split into smaller, more focused modules?**
   _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._
 - **Should `App Navigation & Program Preview` be split into smaller, more focused modules?**
