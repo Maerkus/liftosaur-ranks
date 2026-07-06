@@ -1,6 +1,6 @@
 ---
 name: kb
-description: Capture important architectural decisions, bug patterns, feature designs, or other critical findings into the project knowledge base. Use proactively when significant technical decisions are made, non-obvious bugs are resolved, new subsystems are designed, or important product features are discussed.
+description: Capture architectural decisions, bug patterns, feature designs, or other critical findings into the project knowledge base. Use proactively after significant decisions, non-obvious bug fixes, or new subsystems.
 disable-model-invocation: false
 argument-hint: [what to capture]
 ---

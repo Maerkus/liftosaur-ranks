@@ -1,6 +1,6 @@
 ---
 name: explain-changes
-description: Generate an importance-ordered guided walkthrough of your changes this session and publish it to the reviewer's editor via the aireviewer publish_walkthrough tool. Use when the user asks you to explain, walk through, or give a tour of your changes.
+description: Generate an importance-ordered walkthrough of this session's changes and publish it to the reviewer's editor via aireviewer. Use when asked to explain, walk through, or tour your changes.
 ---
 
 # Explain changes

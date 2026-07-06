@@ -36,7 +36,7 @@ Focus: $ARGUMENTS
   dumped to a file, pull the ids out:
   `python3 -c "import re;print('\n'.join(dict.fromkeys(re.findall(r'\"AXUniqueId\":\"([^\"]+)\"',open('FILE').read()))))"`
 - `ui_type` after tapping a field; `ui_swipe` to scroll; `launch_app(..., terminate_running:true)`
-  to relaunch. See main `CLAUDE.md` for idb setup.
+  to relaunch. See `.claude/docs/visual-verification.md` for idb setup.
 
 ### dump-rn-state.js (read live state)
 ```bash

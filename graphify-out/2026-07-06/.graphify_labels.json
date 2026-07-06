@@ -1,0 +1,23 @@
+{
+  "0": "Account & Equipment Settings UI",
+  "1": "App Navigation & Program Preview",
+  "2": "Core Type Definitions",
+  "3": "Equipment Setup & Program Preview",
+  "4": "App Bootstrap & Watch Bridge",
+  "5": "Native Navigation Screens",
+  "6": "Auth, Subscriptions & Admin Debug",
+  "7": "SKILL.md",
+  "8": "Caveman Help",
+  "9": "Caveman Compress",
+  "10": "SKILL.md",
+  "11": "caveman-commit",
+  "12": "caveman-review",
+  "13": "caveman-stats",
+  "14": "benchmark.py",
+  "15": "__init__.py",
+  "19": "State Reducer & Diagnostics",
+  "46": "Liftoscript CodeMirror Editor",
+  "74": "Record Page & Legal Docs",
+  "86": "Liftoscript Documentation",
+  "182": "Licenses Page"
+}
