@@ -7,7 +7,13 @@ import { UidFactory_generateUid } from "./generator";
 import { CollectionUtils_removeBy } from "./collection";
 import { Thunk_postevent } from "../ducks/thunks";
 
+// Self-hosted fork: everything is unlocked, independent of any server-issued key
+const SELFHOST_UNLOCK = true;
+
 export function Subscriptions_hasSubscription(subscription: ISubscription): boolean {
+  if (SELFHOST_UNLOCK) {
+    return true;
+  }
   if (subscription.key && subscription.key !== "unclaimed") {
     return true;
   }

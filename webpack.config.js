@@ -38,6 +38,13 @@ const local = `https://${localdomain}.liftosaur.com:${localport}/`;
 
 const isDev = process.env.NODE_ENV !== "production";
 
+// Self-hosted builds point every host at the deployment's own origin:
+// LIFTOSAUR_HOST=https://your.domain npm run build:prepare
+const selfHost = process.env.LIFTOSAUR_HOST;
+const selfApiHost = process.env.LIFTOSAUR_API_HOST || selfHost;
+const googleClientId =
+  process.env.LIFTOSAUR_GOOGLE_CLIENT_ID || "944666871420-p8kv124sgte8o0p6ev2ah6npudsl7e4f.apps.googleusercontent.com";
+
 const uniwindRnRewrite = new NormalModuleReplacementPlugin(/^react-native$/, (resource) => {
   const issuer = (resource.contextInfo && resource.contextInfo.issuer) || resource.context || "";
   if (issuer.includes(`${require("path").sep}uniwind${require("path").sep}`)) {
@@ -131,11 +138,12 @@ const watchConfig = {
       __COMMIT_HASH__: JSON.stringify(commitHash),
       __FULL_COMMIT_HASH__: JSON.stringify(fullCommitHash),
       __HOST__: JSON.stringify(
-        process.env.NODE_ENV === "production"
-          ? process.env.STAGE
-            ? "https://stage.liftosaur.com"
-            : "https://www.liftosaur.com"
-          : local
+        selfHost ||
+          (process.env.NODE_ENV === "production"
+            ? process.env.STAGE
+              ? "https://stage.liftosaur.com"
+              : "https://www.liftosaur.com"
+            : local)
       ),
       __ENV__: JSON.stringify(process.env.NODE_ENV === "production" ? "production" : "development"),
     }),
@@ -253,27 +261,31 @@ const mainConfig = {
       __COMMIT_HASH__: JSON.stringify(commitHash),
       __FULL_COMMIT_HASH__: JSON.stringify(fullCommitHash),
       __API_HOST__: JSON.stringify(
-        process.env.NODE_ENV === "production"
-          ? process.env.STAGE
-            ? "https://api3-dev.liftosaur.com"
-            : "https://api3.liftosaur.com"
-          : `https://${localapidomain}.liftosaur.com:${localapiport}`
+        selfApiHost ||
+          (process.env.NODE_ENV === "production"
+            ? process.env.STAGE
+              ? "https://api3-dev.liftosaur.com"
+              : "https://api3.liftosaur.com"
+            : `https://${localapidomain}.liftosaur.com:${localapiport}`)
       ),
       __STREAMING_API_HOST__: JSON.stringify(
-        process.env.NODE_ENV === "production"
-          ? process.env.STAGE
-            ? "https://streaming-api-dev.liftosaur.com"
-            : "https://streaming-api.liftosaur.com"
-          : `https://${localstreamingapidomain}.liftosaur.com:${localstreamingapiport}`
+        selfApiHost ||
+          (process.env.NODE_ENV === "production"
+            ? process.env.STAGE
+              ? "https://streaming-api-dev.liftosaur.com"
+              : "https://streaming-api.liftosaur.com"
+            : `https://${localstreamingapidomain}.liftosaur.com:${localstreamingapiport}`)
       ),
       __ENV__: JSON.stringify(process.env.NODE_ENV === "production" ? "production" : "development"),
       __HOST__: JSON.stringify(
-        process.env.NODE_ENV === "production"
-          ? process.env.STAGE
-            ? "https://stage.liftosaur.com"
-            : "https://www.liftosaur.com"
-          : `https://${localdomain}.liftosaur.com:${localport}`
+        selfHost ||
+          (process.env.NODE_ENV === "production"
+            ? process.env.STAGE
+              ? "https://stage.liftosaur.com"
+              : "https://www.liftosaur.com"
+            : `https://${localdomain}.liftosaur.com:${localport}`)
       ),
+      __GOOGLE_CLIENT_ID__: JSON.stringify(googleClientId),
     }),
     new CopyPlugin([
       {
@@ -718,26 +730,30 @@ const editorWebviewConfig = {
       __FULL_COMMIT_HASH__: JSON.stringify(fullCommitHash),
       __ENV__: JSON.stringify(process.env.NODE_ENV === "production" ? "production" : "development"),
       __HOST__: JSON.stringify(
-        process.env.NODE_ENV === "production"
-          ? process.env.STAGE
-            ? "https://stage.liftosaur.com"
-            : "https://www.liftosaur.com"
-          : local
+        selfHost ||
+          (process.env.NODE_ENV === "production"
+            ? process.env.STAGE
+              ? "https://stage.liftosaur.com"
+              : "https://www.liftosaur.com"
+            : local)
       ),
       __API_HOST__: JSON.stringify(
-        process.env.NODE_ENV === "production"
-          ? process.env.STAGE
-            ? "https://api3-dev.liftosaur.com"
-            : "https://api3.liftosaur.com"
-          : `https://${localapidomain}.liftosaur.com:${localapiport}`
+        selfApiHost ||
+          (process.env.NODE_ENV === "production"
+            ? process.env.STAGE
+              ? "https://api3-dev.liftosaur.com"
+              : "https://api3.liftosaur.com"
+            : `https://${localapidomain}.liftosaur.com:${localapiport}`)
       ),
       __STREAMING_API_HOST__: JSON.stringify(
-        process.env.NODE_ENV === "production"
-          ? process.env.STAGE
-            ? "https://streaming-api-dev.liftosaur.com"
-            : "https://streaming-api.liftosaur.com"
-          : `https://${localstreamingapidomain}.liftosaur.com:${localstreamingapiport}`
+        selfApiHost ||
+          (process.env.NODE_ENV === "production"
+            ? process.env.STAGE
+              ? "https://streaming-api-dev.liftosaur.com"
+              : "https://streaming-api.liftosaur.com"
+            : `https://${localstreamingapidomain}.liftosaur.com:${localstreamingapiport}`)
       ),
+      __GOOGLE_CLIENT_ID__: JSON.stringify(googleClientId),
       __BUNDLE_VERSION_IOS__: bundleVersionIos,
       __BUNDLE_VERSION_ANDROID__: bundleVersionAndroid,
     }),

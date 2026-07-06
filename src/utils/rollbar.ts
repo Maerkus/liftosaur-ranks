@@ -92,7 +92,8 @@ export function RollbarUtils_checkIgnore(isUncaught: boolean, args: LogArgument[
 
 export function RollbarUtils_config(payload?: object): RB.Configuration {
   return {
-    enabled: __ENV__ === "production" || __ENV__ === "prod-lambda" || __ENV__ === "android",
+    // Self-hosted fork: never report to Rollbar (also covers the native client, which uses this config)
+    enabled: false,
     payload: {
       environment: __ENV__,
       client: {

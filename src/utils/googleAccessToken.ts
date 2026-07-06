@@ -2,6 +2,7 @@ import { SendMessage_isIos, SendMessage_toIos, SendMessage_isAndroid, SendMessag
 import { UrlUtils_build } from "./url";
 
 declare let __HOST__: string;
+declare let __GOOGLE_CLIENT_ID__: string;
 
 let windowRef: Window | null = null;
 let windowUrl: string | undefined;
@@ -15,10 +16,7 @@ export function getGoogleAccessToken(useBrowserCallback?: boolean): Promise<stri
     urlBuilder.searchParams.append("include_granted_scopes", "true");
     urlBuilder.searchParams.append("response_type", "token");
     urlBuilder.searchParams.append("redirect_uri", `${__HOST__}${callbackPath}`);
-    urlBuilder.searchParams.append(
-      "client_id",
-      "944666871420-p8kv124sgte8o0p6ev2ah6npudsl7e4f.apps.googleusercontent.com"
-    );
+    urlBuilder.searchParams.append("client_id", __GOOGLE_CLIENT_ID__);
     const url = urlBuilder.toString();
 
     if (receiveMessage != null) {

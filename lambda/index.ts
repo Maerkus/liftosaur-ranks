@@ -38,6 +38,7 @@ import {
   ResponseUtils_getHeaders,
   ResponseUtils_getHost,
   ResponseUtils_clearSessionCookie,
+  ResponseUtils_setSessionCookie,
 } from "./utils/response";
 import { ImageCacher_cache } from "./utils/imageCacher";
 import { ConsentMode_fromCountry } from "./utils/consentMode";
@@ -665,12 +666,7 @@ const postSyncHandler: RouteHandler<IPayload, APIGatewayProxyResult, typeof post
     userId = params.userid;
     const cookieSecret = await di.secrets.getCookieSecret();
     const session = JWT.sign({ userId: userId }, cookieSecret);
-    setCookie = Cookie.serialize("session", session, {
-      httpOnly: true,
-      domain: ".liftosaur.com",
-      path: "/",
-      expires: new Date(new Date().getFullYear() + 10, 0, 1),
-    });
+    setCookie = ResponseUtils_setSessionCookie(session);
   } else {
     userId = await getCurrentUserId(event, di);
   }
@@ -902,12 +898,7 @@ const postDebugSessionHandler: RouteHandler<IPayload, APIGatewayProxyResult, typ
     await userDao.store(UserDao.build(debugId, email, {}));
   }
   const session = JWT.sign({ userId: debugId }, await di.secrets.getCookieSecret());
-  const setCookie = Cookie.serialize("session", session, {
-    httpOnly: true,
-    domain: ".liftosaur.com",
-    path: "/",
-    expires: new Date(new Date().getFullYear() + 10, 0, 1),
-  });
+  const setCookie = ResponseUtils_setSessionCookie(session);
   return ResponseUtils_json(200, event, { session, userId: debugId, email }, { "set-cookie": setCookie });
 };
 
@@ -1031,12 +1022,7 @@ const appleLoginHandler: RouteHandler<IPayload, APIGatewayProxyResult, typeof ap
           body: JSON.stringify(resp),
           headers: {
             ...ResponseUtils_getHeaders(event),
-            "set-cookie": Cookie.serialize("session", session, {
-              httpOnly: true,
-              domain: ".liftosaur.com",
-              path: "/",
-              expires: new Date(new Date().getFullYear() + 10, 0, 1),
-            }),
+            "set-cookie": ResponseUtils_setSessionCookie(session),
           },
         };
       }
@@ -1164,12 +1150,7 @@ const googleLoginHandler: RouteHandler<IPayload, APIGatewayProxyResult, typeof g
     body: JSON.stringify(resp),
     headers: {
       ...ResponseUtils_getHeaders(event),
-      "set-cookie": Cookie.serialize("session", session, {
-        httpOnly: true,
-        domain: ".liftosaur.com",
-        path: "/",
-        expires: new Date(new Date().getFullYear() + 10, 0, 1),
-      }),
+      "set-cookie": ResponseUtils_setSessionCookie(session),
     },
   };
 };
@@ -3180,6 +3161,8 @@ async function showRepMax(payload: IPayload, reps?: number): Promise<APIGatewayP
 }
 
 const rollbar = new Rollbar({
+  // Self-hosted fork: reporting disabled, but the instance stays so rollbar.lambdaHandler keeps working
+  enabled: false,
   accessToken: "bcdd086a019f49edb69f790a854b44dd",
   captureUncaught: true,
   captureUnhandledRejections: true,

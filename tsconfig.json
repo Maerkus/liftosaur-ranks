@@ -46,6 +46,7 @@
     "aihelpers/**/*",
     "index.native.ts",
     "devserver.ts",
+    "server.ts",
     "playwright.config.ts",
     "uniwind-types.d.ts"
   ]

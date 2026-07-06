@@ -80,7 +80,16 @@ export class DynamoUtil implements IDynamoUtil {
 
   private get dynamo(): DynamoDBDocumentClient {
     if (this._dynamo == null) {
-      this._dynamo = DynamoDBDocumentClient.from(new DynamoDBClient({}), {
+      // DYNAMODB_ENDPOINT points at DynamoDB Local for self-hosted deployments, where
+      // there are no real AWS credentials - DynamoDB Local accepts any static ones.
+      const client = process.env.DYNAMODB_ENDPOINT
+        ? new DynamoDBClient({
+            endpoint: process.env.DYNAMODB_ENDPOINT,
+            region: process.env.AWS_REGION || "local",
+            credentials: { accessKeyId: "local", secretAccessKey: "local" },
+          })
+        : new DynamoDBClient({});
+      this._dynamo = DynamoDBDocumentClient.from(client, {
         marshallOptions: { removeUndefinedValues: true },
       });
     }

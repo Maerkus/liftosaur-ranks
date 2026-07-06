@@ -11,6 +11,8 @@ export const freeUsersTableNames = {
   },
 } as const;
 
+const SELFHOST_KEY = "key-selfhost";
+
 export interface IFreeUserDao {
   id: string;
   key: string;
@@ -53,6 +55,11 @@ export class FreeUserDao {
   }
 
   public async getKey(id: string): Promise<{ key: string; isClaimed: boolean } | undefined> {
+    // Self-hosted deployments grant every account a permanent claimed key, which is what
+    // unlocks premium in the client - no lftFreeUsers rows needed
+    if (process.env.SELFHOST === "true") {
+      return { key: SELFHOST_KEY, isClaimed: true };
+    }
     const freeUser = await this.get(id);
     if (freeUser?.key && freeUser?.expires > Date.now()) {
       return { key: freeUser.key, isClaimed: freeUser.isClaimed };
@@ -61,6 +68,9 @@ export class FreeUserDao {
   }
 
   public async verifyKey(id: string): Promise<string | undefined> {
+    if (process.env.SELFHOST === "true") {
+      return SELFHOST_KEY;
+    }
     const freeUser = await this.get(id);
     if (freeUser?.key && freeUser?.expires > Date.now() && freeUser?.isClaimed) {
       return freeUser.key;

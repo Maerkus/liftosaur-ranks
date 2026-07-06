@@ -1,0 +1,44 @@
+# Self-hosted Liftosaur stack: API server + DynamoDB Local + Caddy (static files + reverse proxy).
+# See SELFHOST.md for setup. Data persists under ./data/.
+services:
+  dynamodb:
+    image: amazon/dynamodb-local:latest
+    command: "-jar DynamoDBLocal.jar -sharedDb -dbPath /data"
+    user: root
+    volumes:
+      - ./data/dynamodb:/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -s -o /dev/null http://localhost:8000 || exit 0"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.selfhost
+    command: sh -c "npx ts-node scripts/create-selfhost-tables.ts && npx ts-node server.ts"
+    env_file: .env.selfhost
+    environment:
+      SELFHOST: "true"
+      IS_DEV: "false"
+      IS_LOCAL: "false"
+      DYNAMODB_ENDPOINT: http://dynamodb:8000
+      LFT_DATA_DIR: /data/s3
+      PORT: "3000"
+    volumes:
+      - ./data/s3:/data/s3
+    depends_on:
+      - dynamodb
+    restart: unless-stopped
+
+  caddy:
+    image: caddy:2
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./Caddyfile.selfhost:/etc/caddy/Caddyfile:ro
+      - ./dist:/srv/dist:ro
+    depends_on:
+      - api
+    restart: unless-stopped

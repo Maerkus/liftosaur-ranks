@@ -1,0 +1,9 @@
+node_modules
+dist
+dist-lambda
+ios
+android
+.git
+data
+graphify-out
+*.log

@@ -1,0 +1,16 @@
+# Static files win when they exist (mirrors the production S3+CloudFront model);
+# everything else (API routes and server-rendered pages) falls through to the Node server.
+:8080 {
+	root * /srv/dist
+	encode gzip
+
+	@static file {
+		try_files {path} {path}/index.html
+	}
+	handle @static {
+		file_server
+	}
+	handle {
+		reverse_proxy api:3000
+	}
+}
